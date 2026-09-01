@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home Fitness Planner — rough flow</title>
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: system-ui, sans-serif; color: #222; background: #fafafa; }
+    header { padding: 18px 24px; border-bottom: 1px solid #aaa; background: white; }
+    header strong { font-size: 18px; }
+    header span { float: right; color: #666; font-size: 13px; }
+    main { display: grid; grid-template-columns: repeat(3, minmax(260px, 1fr)); gap: 18px; padding: 20px; }
+    section { min-height: 690px; padding: 18px; border: 1px solid #999; border-radius: 5px; background: white; }
+    .step { color: #666; text-transform: uppercase; letter-spacing: .08em; font-size: 11px; }
+    h1 { margin: 8px 0 6px; font-size: 23px; line-height: 1.15; }
+    h2 { margin: 18px 0 8px; font-size: 16px; }
+    p, li, label { font-size: 13px; line-height: 1.45; }
+    .muted { color: #666; }
+    .field { margin: 14px 0; }
+    .choices { display: grid; grid-template-columns: repeat(3, 1fr); gap: 6px; margin-top: 6px; }
+    .choice, .button { padding: 9px; border: 1px solid #888; text-align: center; background: #fff; }
+    .choice.selected { outline: 2px solid #333; font-weight: 650; }
+    .button { margin-top: 18px; background: #222; color: white; }
+    .notice { margin: 12px 0; padding: 10px; border: 1px dashed #888; background: #f5f5f5; }
+    .day { margin: 8px 0; padding: 10px; border: 1px solid #aaa; }
+    .day strong { display: inline-block; min-width: 80px; }
+    .tag { display: inline-block; margin: 2px 3px 2px 0; padding: 2px 6px; border: 1px solid #aaa; border-radius: 10px; font-size: 11px; }
+    .exercise { display: grid; grid-template-columns: 70px 1fr; gap: 10px; margin: 10px 0; padding-top: 10px; border-top: 1px solid #ccc; }
+    .sketch { display: grid; place-items: center; height: 70px; border: 1px dashed #777; color: #777; font-size: 11px; }
+    a { color: #222; text-decoration: underline; }
+    @media (max-width: 900px) { main { grid-template-columns: 1fr; } section { min-height: auto; } }
+  </style>
+</head>
+<body>
+  <header><strong>Home Fitness Planner</strong><span>No account · 4-week beginner plan</span></header>
+  <main>
+    <!-- Screen 1 asks only inputs that materially change the supported plan. -->
+    <section>
+      <div class="step">Step 1 of 3 · Your commitment</div>
+      <h1>Build a routine you can actually keep.</h1>
+      <p class="muted">For apparently healthy adults aged 18–64 who are new to exercise.</p>
+      <div class="field"><label><strong>Minutes available per workout</strong></label><div class="choices"><div class="choice">15</div><div class="choice selected">30</div><div class="choice">45</div></div></div>
+      <div class="field"><label><strong>Days you can train each week</strong></label><div class="choices"><div class="choice">2</div><div class="choice selected">3</div><div class="choice">4</div></div></div>
+      <div class="field"><label><strong>Starting point</strong></label><div class="choices"><div class="choice selected">New</div><div class="choice">Some activity</div><div class="choice">Returning</div></div></div>
+      <div class="notice"><strong>Safety check</strong><br>Do you have chest pain, dizziness, an active injury, a condition affected by exercise, or are you pregnant/postpartum? A “yes” pauses plan generation and points to qualified help.</div>
+      <div class="button">Create my explained plan →</div>
+      <p class="muted">Nothing is uploaded. No login or progress tracking in this version.</p>
+    </section>
+
+    <!-- Screen 2 leads with the schedule, then explains why it fits. -->
+    <section>
+      <div class="step">Your four-week plan</div>
+      <h1>Three balanced 30-minute sessions</h1>
+      <p>Full-body practice on non-consecutive days, with walking or easy movement between sessions.</p>
+      <div class="day"><strong>Monday</strong> Workout A · 30 min</div>
+      <div class="day"><strong>Wednesday</strong> Workout B · 30 min</div>
+      <div class="day"><strong>Friday</strong> Workout A · 30 min</div>
+      <h2>Why this fits you</h2>
+      <ul><li>Three days leave recovery time between beginner strength sessions.</li><li>Thirty minutes fits a warm-up, five movement patterns, and a short cool-down.</li><li>Week 1 starts below maximum effort; weeks 2–4 add reps or control, not random exercises.</li></ul>
+      <h2>Progression</h2>
+      <p><span class="tag">W1 Learn</span><span class="tag">W2 Add reps</span><span class="tag">W3 Add a set</span><span class="tag">W4 Improve control</span></p>
+      <div class="notice">Stop a movement for sharp pain, faintness, chest discomfort, or unusual shortness of breath. The plan cannot assess your form.</div>
+      <p><a href="#">Print / save plan</a> · <a href="#">Change commitment</a></p>
+    </section>
+
+    <!-- Screen 3 keeps illustrations minimal and makes source provenance visible. -->
+    <section>
+      <div class="step">Workout A · 30 minutes</div>
+      <h1>Learn the movement, then do the work.</h1>
+      <p><strong>Warm-up:</strong> 5 minutes · easy marching, arm circles, hip hinges.</p>
+      <div class="exercise"><div class="sketch">simple<br>illustration</div><div><strong>Chair squat</strong><br>2 sets × 8 controlled reps<br><span class="muted">Sit back toward the chair. Keep the whole foot grounded.</span><br><a href="#">Watch reviewed demonstration ↗</a></div></div>
+      <div class="exercise"><div class="sketch">simple<br>illustration</div><div><strong>Wall push-up</strong><br>2 sets × 8 controlled reps<br><span class="muted">Keep a straight line from head to heel. Move the body as one unit.</span><br><a href="#">Watch reviewed demonstration ↗</a></div></div>
+      <div class="exercise"><div class="sketch">simple<br>illustration</div><div><strong>Glute bridge</strong><br>2 sets × 10 controlled reps<br><span class="muted">Pause at the top without arching the lower back.</span><br><a href="#">Watch reviewed demonstration ↗</a></div></div>
+      <div class="notice"><strong>Source record</strong><br>Publisher, reviewer, last-checked date, and evidence link appear beside every external demonstration.</div>
+    </section>
+  </main>
+</body>
+</html>

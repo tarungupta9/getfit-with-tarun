@@ -1,0 +1,122 @@
+{
+  "version": "sequences-2026-09-01-draft.1",
+  "sequences": [
+    {
+      "id": "warmup-2",
+      "name": "Two-minute warm-up",
+      "durationSeconds": 120,
+      "steps": [
+        {
+          "name": "Easy march",
+          "durationSeconds": 60,
+          "cue": "Move at a conversational pace."
+        },
+        {
+          "name": "Shoulder rolls and hip hinges",
+          "durationSeconds": 60,
+          "cue": "Use a comfortable range."
+        }
+      ]
+    },
+    {
+      "id": "warmup-4",
+      "name": "Four-minute warm-up",
+      "durationSeconds": 240,
+      "steps": [
+        {
+          "name": "Easy march",
+          "durationSeconds": 90,
+          "cue": "Move at a conversational pace."
+        },
+        {
+          "name": "Shoulder circles",
+          "durationSeconds": 60,
+          "cue": "Keep your neck relaxed."
+        },
+        {
+          "name": "Wall hip hinges",
+          "durationSeconds": 90,
+          "cue": "Move slowly through a comfortable range."
+        }
+      ]
+    },
+    {
+      "id": "warmup-5",
+      "name": "Five-minute warm-up",
+      "durationSeconds": 300,
+      "steps": [
+        {
+          "name": "Easy march",
+          "durationSeconds": 120,
+          "cue": "Gradually settle into a steady pace."
+        },
+        {
+          "name": "Shoulder circles",
+          "durationSeconds": 60,
+          "cue": "Keep your neck relaxed."
+        },
+        {
+          "name": "Wall hip hinges",
+          "durationSeconds": 60,
+          "cue": "Move slowly through a comfortable range."
+        },
+        {
+          "name": "Supported sit-to-stands",
+          "durationSeconds": 60,
+          "cue": "Use the chair and move smoothly."
+        }
+      ]
+    },
+    {
+      "id": "cooldown-2",
+      "name": "Two-minute cool-down",
+      "durationSeconds": 120,
+      "steps": [
+        {
+          "name": "Slow walk",
+          "durationSeconds": 60,
+          "cue": "Let your breathing settle."
+        },
+        {
+          "name": "Easy reach and breathe",
+          "durationSeconds": 60,
+          "cue": "Avoid forcing a stretch."
+        }
+      ]
+    },
+    {
+      "id": "cooldown-3",
+      "name": "Three-minute cool-down",
+      "durationSeconds": 180,
+      "steps": [
+        {
+          "name": "Slow walk",
+          "durationSeconds": 90,
+          "cue": "Let your breathing settle."
+        },
+        {
+          "name": "Easy reach and breathe",
+          "durationSeconds": 90,
+          "cue": "Avoid forcing a stretch."
+        }
+      ]
+    },
+    {
+      "id": "cooldown-4",
+      "name": "Four-minute cool-down",
+      "durationSeconds": 240,
+      "steps": [
+        {
+          "name": "Slow walk",
+          "durationSeconds": 120,
+          "cue": "Let your breathing settle."
+        },
+        {
+          "name": "Easy reach and breathe",
+          "durationSeconds": 120,
+          "cue": "Avoid forcing a stretch."
+        }
+      ]
+    }
+  ]
+}

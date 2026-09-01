@@ -1,0 +1,3609 @@
+{
+  "metadata": {
+    "version": "catalogue-2026-09-01-draft.1",
+    "reviewStatus": "draft",
+    "reviewedBy": null,
+    "reviewedAt": null
+  },
+  "exercises": [
+    {
+      "id": "sit-to-stand-supported",
+      "name": "Supported sit-to-stand",
+      "family": "knee",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "stable_chair"
+      ],
+      "selectionPriority": 1,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "chair-squat",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/knee.svg",
+      "illustrationAlt": "Simple line illustration for supported sit-to-stand.",
+      "cues": [
+        "Use your hands lightly on a stable chair as you stand.",
+        "Press through your whole foot and stand tall."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Builds confidence with the squat pattern using extra support.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "chair-squat",
+      "name": "Chair squat",
+      "family": "knee",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "stable_chair"
+      ],
+      "selectionPriority": 2,
+      "secondsPerRep": 4,
+      "easierExerciseId": "sit-to-stand-supported",
+      "harderExerciseId": "bodyweight-squat-chair-target",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/knee.svg",
+      "illustrationAlt": "Simple line illustration for chair squat.",
+      "cues": [
+        "Reach your hips back toward a stable chair.",
+        "Keep your knees tracking in the same direction as your toes."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Practises controlled sitting and standing strength.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "bodyweight-squat-chair-target",
+      "name": "Bodyweight squat to chair target",
+      "family": "knee",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "stable_chair"
+      ],
+      "selectionPriority": 3,
+      "secondsPerRep": 4,
+      "easierExerciseId": "chair-squat",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/knee.svg",
+      "illustrationAlt": "Simple line illustration for bodyweight squat to chair target.",
+      "cues": [
+        "Hover above the chair instead of sitting down.",
+        "Keep your chest comfortably tall and your whole foot grounded."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds control and range while keeping a clear depth target.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "short-range-glute-bridge",
+      "name": "Short-range glute bridge",
+      "family": "posterior_hip",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 4,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "glute-bridge",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for short-range glute bridge.",
+      "cues": [
+        "Press through your feet and lift only as high as feels comfortable.",
+        "Keep your ribs relaxed instead of arching your lower back."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Introduces hip extension with a deliberately small range.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "glute-bridge",
+      "name": "Glute bridge",
+      "family": "posterior_hip",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 5,
+      "secondsPerRep": 4,
+      "easierExerciseId": "short-range-glute-bridge",
+      "harderExerciseId": "paused-glute-bridge",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for glute bridge.",
+      "cues": [
+        "Press through your feet and lift your hips smoothly.",
+        "Finish with your body in a comfortable line from shoulders to knees."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Builds posterior-chain strength without standing balance demands.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "paused-glute-bridge",
+      "name": "Paused glute bridge",
+      "family": "posterior_hip",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 6,
+      "secondsPerRep": 4,
+      "easierExerciseId": "glute-bridge",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for paused glute bridge.",
+      "cues": [
+        "Pause briefly at the top while breathing normally.",
+        "Lower with control and reset before the next repetition."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds control to a familiar posterior-chain movement.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "reduced-wall-hinge",
+      "name": "Reduced-range wall hinge",
+      "family": "posterior_hip",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "wall"
+      ],
+      "selectionPriority": 7,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "wall-hip-hinge",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for reduced-range wall hinge.",
+      "cues": [
+        "Stand close to a wall and send your hips back gently.",
+        "Keep your spine long and stop at a comfortable range."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Teaches the hip-hinge pattern with a short target distance.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "wall-hip-hinge",
+      "name": "Wall hip-hinge drill",
+      "family": "posterior_hip",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "wall"
+      ],
+      "selectionPriority": 8,
+      "secondsPerRep": 4,
+      "easierExerciseId": "reduced-wall-hinge",
+      "harderExerciseId": "unsupported-bodyweight-hinge",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for wall hip-hinge drill.",
+      "cues": [
+        "Reach your hips back to touch the wall behind you.",
+        "Keep soft knees and feel the movement come from the hips."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Makes the hip-hinge direction easy to understand.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "unsupported-bodyweight-hinge",
+      "name": "Unsupported bodyweight hinge",
+      "family": "posterior_hip",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [],
+      "selectionPriority": 9,
+      "secondsPerRep": 4,
+      "easierExerciseId": "wall-hip-hinge",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/posterior.svg",
+      "illustrationAlt": "Simple line illustration for unsupported bodyweight hinge.",
+      "cues": [
+        "Push your hips back without using the wall as a target.",
+        "Stand by squeezing your glutes rather than leaning backward."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Practises an independent hip hinge for daily lifting patterns.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "upright-wall-push-up",
+      "name": "More upright wall push-up",
+      "family": "push",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "wall"
+      ],
+      "selectionPriority": 10,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "wall-push-up",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/push.svg",
+      "illustrationAlt": "Simple line illustration for more upright wall push-up.",
+      "cues": [
+        "Stand close enough to the wall that the movement feels easy.",
+        "Move your body as one line from head to heel."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Introduces pushing strength with a highly adjustable load.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "wall-push-up",
+      "name": "Wall push-up",
+      "family": "push",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "wall"
+      ],
+      "selectionPriority": 11,
+      "secondsPerRep": 4,
+      "easierExerciseId": "upright-wall-push-up",
+      "harderExerciseId": "knee-push-up",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/push.svg",
+      "illustrationAlt": "Simple line illustration for wall push-up.",
+      "cues": [
+        "Place your hands slightly wider than shoulder width.",
+        "Bend your elbows, bring your chest toward the wall, then press away."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Builds upper-body pushing strength without floor transitions.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "knee-push-up",
+      "name": "Knee push-up",
+      "family": "push",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 12,
+      "secondsPerRep": 4,
+      "easierExerciseId": "wall-push-up",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/push.svg",
+      "illustrationAlt": "Simple line illustration for knee push-up.",
+      "cues": [
+        "Set a straight line from your head through your knees.",
+        "Lower only as far as you can keep your trunk steady."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Increases pushing demand while retaining a shorter lever.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "standing-wall-w",
+      "name": "Standing wall W",
+      "family": "upper_back",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "wall"
+      ],
+      "selectionPriority": 13,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "prone-w-raise",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/upper-back.svg",
+      "illustrationAlt": "Simple line illustration for standing wall w.",
+      "cues": [
+        "Stand comfortably against a wall with your arms in a W shape.",
+        "Draw your shoulder blades gently down and together."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Introduces upper-back engagement in a supported position.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "prone-w-raise",
+      "name": "Prone W raise",
+      "family": "upper_back",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 14,
+      "secondsPerRep": 4,
+      "easierExerciseId": "standing-wall-w",
+      "harderExerciseId": "prone-reverse-snow-angel",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/upper-back.svg",
+      "illustrationAlt": "Simple line illustration for prone w raise.",
+      "cues": [
+        "Lie face down with your arms in a W shape.",
+        "Lift your hands slightly without shrugging your shoulders."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Builds awareness and endurance around the upper back.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "prone-reverse-snow-angel",
+      "name": "Prone reverse snow angel",
+      "family": "upper_back",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 15,
+      "secondsPerRep": 4,
+      "easierExerciseId": "prone-w-raise",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/upper-back.svg",
+      "illustrationAlt": "Simple line illustration for prone reverse snow angel.",
+      "cues": [
+        "Sweep your arms slowly while keeping them just above the floor.",
+        "Use a pain-free range and keep your neck relaxed."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds controlled shoulder movement to upper-back endurance work.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "heel-taps",
+      "name": "Heel taps",
+      "family": "trunk",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 16,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "dead-bug",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for heel taps.",
+      "cues": [
+        "Keep your lower back comfortably heavy on the floor.",
+        "Tap one heel away and return before changing sides."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Introduces trunk control with one short moving lever.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "dead-bug",
+      "name": "Dead bug",
+      "family": "trunk",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 17,
+      "secondsPerRep": 4,
+      "easierExerciseId": "heel-taps",
+      "harderExerciseId": "extended-dead-bug",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for dead bug.",
+      "cues": [
+        "Move the opposite arm and leg without arching your back.",
+        "Exhale as the limbs move away and return with control."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Builds trunk control while the arms and legs move.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "extended-dead-bug",
+      "name": "Extended dead bug",
+      "family": "trunk",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 18,
+      "secondsPerRep": 4,
+      "easierExerciseId": "dead-bug",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for extended dead bug.",
+      "cues": [
+        "Reach the moving arm and leg farther only if your trunk stays steady.",
+        "Make the range smaller when your back begins to lift."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Progresses dead-bug control through a longer lever.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "single-limb-bird-dog",
+      "name": "Single-limb bird-dog reach",
+      "family": "trunk",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 19,
+      "secondsPerRep": 4,
+      "easierExerciseId": null,
+      "harderExerciseId": "bird-dog",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for single-limb bird-dog reach.",
+      "cues": [
+        "From hands and knees, reach only one arm or one leg.",
+        "Keep your hips level and your movement slow."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Introduces quadruped trunk stability one limb at a time.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "bird-dog",
+      "name": "Bird dog",
+      "family": "trunk",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 20,
+      "secondsPerRep": 4,
+      "easierExerciseId": "single-limb-bird-dog",
+      "harderExerciseId": "paused-bird-dog",
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for bird dog.",
+      "cues": [
+        "Reach the opposite arm and leg while keeping your hips square.",
+        "Return gently without shifting your weight quickly."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Challenges trunk stability with opposite-limb movement.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "paused-bird-dog",
+      "name": "Paused bird dog",
+      "family": "trunk",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "floor"
+      ],
+      "selectionPriority": 21,
+      "secondsPerRep": 4,
+      "easierExerciseId": "bird-dog",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 6,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "controlled",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 7,
+            "tempo": "three_second_lower",
+            "range": "reduced",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 8,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "reps"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 9,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "reps",
+            "sets": 2,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "controlled",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "tempo"
+          },
+          {
+            "mode": "reps",
+            "sets": 3,
+            "reps": 10,
+            "tempo": "three_second_lower",
+            "range": "full_comfortable",
+            "restSeconds": 30,
+            "changedDimension": "range"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/trunk.svg",
+      "illustrationAlt": "Simple line illustration for paused bird dog.",
+      "cues": [
+        "Pause in the extended position while breathing normally.",
+        "Keep your ribs and pelvis facing the floor."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds control and time under tension to bird dog.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "supported-march",
+      "name": "Supported march in place",
+      "family": "conditioning",
+      "difficulty": 1,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [
+        "stable_chair"
+      ],
+      "selectionPriority": 22,
+      "easierExerciseId": null,
+      "harderExerciseId": "march-in-place",
+      "terminalEasierModification": "Use a smaller comfortable range and move more slowly.",
+      "tracks": {
+        "new": [
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 35,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/conditioning.svg",
+      "illustrationAlt": "Simple line illustration for supported march in place.",
+      "cues": [
+        "Keep one hand near a stable chair and march at an easy pace.",
+        "Stay tall and place each foot down quietly."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Raises movement volume while keeping balance support nearby.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "march-in-place",
+      "name": "March in place",
+      "family": "conditioning",
+      "difficulty": 2,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [],
+      "selectionPriority": 23,
+      "easierExerciseId": "supported-march",
+      "harderExerciseId": "low-impact-step-jack",
+      "tracks": {
+        "new": [
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 35,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/conditioning.svg",
+      "illustrationAlt": "Simple line illustration for march in place.",
+      "cues": [
+        "March at a pace that lets you speak in full sentences.",
+        "Land softly and let your arms swing naturally."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds accessible low-impact conditioning without equipment.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    },
+    {
+      "id": "low-impact-step-jack",
+      "name": "Low-impact step jack",
+      "family": "conditioning",
+      "difficulty": 3,
+      "compatibleStartingPoints": [
+        "new",
+        "lightly_active",
+        "returning"
+      ],
+      "setup": [],
+      "selectionPriority": 24,
+      "easierExerciseId": "march-in-place",
+      "harderExerciseId": null,
+      "tracks": {
+        "new": [
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 1,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "lightly_active": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 20,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ],
+        "returning": [
+          {
+            "mode": "timed",
+            "sets": 2,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "baseline"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 25,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "sets"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 30,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          },
+          {
+            "mode": "timed",
+            "sets": 3,
+            "workSeconds": 35,
+            "tempo": "natural",
+            "range": "comfortable",
+            "restSeconds": 30,
+            "changedDimension": "work"
+          }
+        ]
+      },
+      "illustrationPath": "/exercises/conditioning.svg",
+      "illustrationAlt": "Simple line illustration for low-impact step jack.",
+      "cues": [
+        "Step one foot out as your arms rise, then return and change sides.",
+        "Keep the movement smooth and avoid jumping."
+      ],
+      "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
+      "educationalRationale": "Adds whole-body rhythm and a modest conditioning challenge.",
+      "source": {
+        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "publisher": "NHS",
+        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "reviewedBy": "Pending qualified fitness review",
+        "lastCheckedAt": "2026-09-01",
+        "availability": "available"
+      }
+    }
+  ]
+}

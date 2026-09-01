@@ -1,0 +1,116 @@
+{
+  "version": "policy-2026-09-01-draft.1",
+  "catalogVersion": "catalogue-2026-09-01-draft.1",
+  "safetyCopyVersion": "safety-2026-09-01-draft.1",
+  "transitionSeconds": 15,
+  "durationBudgets": {
+    "15": {
+      "warmupSeconds": 120,
+      "mainSeconds": 600,
+      "cooldownSeconds": 120,
+      "bufferSeconds": 60
+    },
+    "30": {
+      "warmupSeconds": 240,
+      "mainSeconds": 1260,
+      "cooldownSeconds": 180,
+      "bufferSeconds": 120
+    },
+    "45": {
+      "warmupSeconds": 300,
+      "mainSeconds": 1980,
+      "cooldownSeconds": 240,
+      "bufferSeconds": 180
+    }
+  },
+  "requiredFamilies": {
+    "15": {
+      "A": [
+        "knee",
+        "push",
+        "trunk"
+      ],
+      "B": [
+        "posterior_hip",
+        "upper_back",
+        "trunk"
+      ]
+    },
+    "30": {
+      "A": [
+        "knee",
+        "push",
+        "trunk",
+        "conditioning"
+      ],
+      "B": [
+        "posterior_hip",
+        "upper_back",
+        "trunk",
+        "conditioning"
+      ]
+    },
+    "45": {
+      "A": [
+        "knee",
+        "push",
+        "trunk",
+        "posterior_hip",
+        "conditioning"
+      ],
+      "B": [
+        "posterior_hip",
+        "upper_back",
+        "trunk",
+        "knee",
+        "conditioning"
+      ]
+    }
+  },
+  "optionalFamilies": {
+    "15": {
+      "A": [],
+      "B": []
+    },
+    "30": {
+      "A": [
+        "posterior_hip",
+        "upper_back"
+      ],
+      "B": [
+        "knee",
+        "push"
+      ]
+    },
+    "45": {
+      "A": [
+        "upper_back",
+        "knee",
+        "push",
+        "trunk",
+        "posterior_hip",
+        "conditioning"
+      ],
+      "B": [
+        "push",
+        "posterior_hip",
+        "upper_back",
+        "trunk"
+      ]
+    }
+  },
+  "sequenceIds": {
+    "15": {
+      "warmup": "warmup-2",
+      "cooldown": "cooldown-2"
+    },
+    "30": {
+      "warmup": "warmup-4",
+      "cooldown": "cooldown-3"
+    },
+    "45": {
+      "warmup": "warmup-5",
+      "cooldown": "cooldown-4"
+    }
+  }
+}
