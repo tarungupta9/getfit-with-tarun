@@ -4,17 +4,19 @@ import { content } from '../src/content'
 
 const missingAssets: string[] = []
 for (const exercise of content.exercises) {
-  try {
-    await access(resolve('public', exercise.illustrationPath.replace(/^\//, '')))
-  } catch {
-    missingAssets.push(`${exercise.id}: ${exercise.illustrationPath}`)
+  for (const image of exercise.postureImages) {
+    try {
+      await access(resolve('public', image.path.replace(/^\//, '')))
+    } catch {
+      missingAssets.push(`${exercise.id}: ${image.path}`)
+    }
   }
 }
 
 if (missingAssets.length > 0) {
-  throw new Error(`Missing illustration assets:\n${missingAssets.join('\n')}`)
+  throw new Error(`Missing posture assets:\n${missingAssets.join('\n')}`)
 }
 
 console.log(
-  `Validated ${content.exercises.length} exercises, ${content.sequences.length} sequences, policy ${content.policy.version}, and all local assets.`,
+  `Validated ${content.exercises.length} exercises, ${content.sequences.length} sequences, policy ${content.policy.version}, and all local posture assets.`,
 )

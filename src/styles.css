@@ -133,24 +133,51 @@ main { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
 .exercise-list { padding: 0 1.25rem; }
 .exercise-card { border-bottom: 1px solid var(--border); }
 .exercise-card:last-child { border-bottom: 0; }
-.exercise-card summary { display: grid; grid-template-columns: 5rem minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; padding: 1rem 0; cursor: pointer; list-style: none; }
-.exercise-card summary::-webkit-details-marker { display: none; }
-.exercise-card summary img { width: 5rem; height: 4rem; object-fit: contain; border-radius: 0.65rem; background: var(--surface-soft); }
-.exercise-card summary span { min-width: 0; }
-.exercise-card summary strong, .exercise-card summary small { display: block; }
-.exercise-card summary small { margin-top: 0.3rem; color: var(--muted); }
+.exercise-summary { display: grid; grid-template-columns: 5rem minmax(0, 1fr) auto; align-items: center; gap: 0.85rem; width: 100%; padding: 1rem 0; border: 0; background: transparent; color: inherit; font: inherit; text-align: left; cursor: pointer; }
+.exercise-summary:hover .details-label { text-decoration: underline; text-underline-offset: 0.2em; }
+.exercise-summary:focus-visible { border-radius: 0.7rem; outline: 3px solid var(--accent); outline-offset: 2px; }
+.exercise-summary img { width: 5rem; height: 4rem; object-fit: contain; border-radius: 0.65rem; background: var(--surface-soft); }
+.exercise-summary span { min-width: 0; }
+.exercise-summary strong, .exercise-summary small { display: block; }
+.exercise-summary small { margin-top: 0.3rem; color: var(--muted); }
 .details-label { color: var(--brand); font-size: 0.8rem; font-weight: 700; }
-.exercise-body { padding: 0 0 1.4rem 5.85rem; }
-.exercise-body > p { color: var(--muted); }
-.exercise-body li { margin-bottom: 0.45rem; line-height: 1.5; }
+.print-exercise-body { display: none; }
+.exercise-instructions > p { color: var(--muted); }
+.exercise-instructions li { margin-bottom: 0.45rem; line-height: 1.5; }
 .progression-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0.4rem; margin: 1rem 0; }
 .progression-row span { padding: 0.55rem; border-radius: 0.5rem; background: var(--surface-soft); }
 .progression-row small, .progression-row strong { display: block; }
 .progression-row small { color: var(--muted); font-size: 0.68rem; }
 .progression-row strong { margin-top: 0.2rem; font-size: 0.72rem; line-height: 1.35; }
 .stop-copy { padding-left: 0.8rem; border-left: 3px solid var(--accent); }
-.source-section ol { columns: 2; column-gap: 3rem; padding-left: 1.3rem; }
-.source-section li { break-inside: avoid; margin-bottom: 0.85rem; line-height: 1.5; }
+.exercise-carousel { margin: 0 0 1.25rem; outline: none; }
+.exercise-carousel:focus-visible { border-radius: 0.8rem; outline: 3px solid var(--accent); outline-offset: 3px; }
+.carousel-slide { display: none; margin: 0; }
+.carousel-slide-active { display: block; }
+.carousel-slide img { display: block; width: 100%; height: min(60vh, 38rem); border-radius: 0.8rem; background: var(--surface-soft); object-fit: contain; }
+.carousel-slide figcaption { display: grid; grid-template-columns: auto 1fr; gap: 0.65rem; align-items: baseline; padding: 0.75rem 0.1rem 0; color: var(--muted); font-size: 0.85rem; line-height: 1.45; }
+.carousel-slide figcaption strong { color: var(--brand-dark); font-size: 0.68rem; letter-spacing: 0.1em; text-transform: uppercase; }
+.carousel-controls { display: grid; grid-template-columns: 2.5rem 1fr auto 2.5rem; gap: 0.6rem; align-items: center; margin-top: 0.8rem; }
+.carousel-controls > button { width: 2.5rem; height: 2.5rem; border: 1px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--brand-dark); font-weight: 800; }
+.carousel-controls > button:hover { border-color: var(--brand); background: var(--brand-light); }
+.carousel-controls button:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.carousel-dots { display: flex; gap: 0.45rem; align-items: center; justify-content: center; }
+.carousel-dots button { width: 0.65rem; height: 0.65rem; padding: 0; border: 0; border-radius: 50%; background: var(--border); }
+.carousel-dots .carousel-dot-active { background: var(--brand); transform: scale(1.25); }
+.carousel-status { min-width: 3.4rem; color: var(--muted); font-size: 0.75rem; text-align: center; }
+.form-video-link { display: inline-flex; gap: 0.35rem; align-items: center; font-weight: 700; }
+.modal-open { overflow: hidden; }
+.exercise-modal { width: min(70rem, calc(100vw - 2rem)); max-width: none; max-height: calc(100dvh - 2rem); padding: 0; border: 0; border-radius: 1.25rem; background: var(--surface); color: var(--ink); box-shadow: 0 24px 80px rgb(11 31 25 / 0.3); }
+.exercise-modal::backdrop { background: rgb(11 31 25 / 0.68); backdrop-filter: blur(3px); }
+.exercise-modal-shell { max-height: calc(100dvh - 2rem); overflow: auto; }
+.exercise-modal-header { position: sticky; z-index: 2; top: 0; display: flex; align-items: flex-start; justify-content: space-between; gap: 1.5rem; padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); background: rgb(255 255 255 / 0.96); backdrop-filter: blur(10px); }
+.exercise-modal-header h2 { margin-top: 0.15rem; font-size: clamp(1.7rem, 3vw, 2.6rem); }
+.exercise-modal-header p:last-child { margin: 0.35rem 0 0; color: var(--muted); }
+.modal-close { flex: 0 0 auto; width: 2.75rem; height: 2.75rem; border: 1px solid var(--border); border-radius: 50%; background: var(--surface); color: var(--ink); font-size: 1.65rem; line-height: 1; }
+.modal-close:hover { border-color: var(--brand); background: var(--brand-light); }
+.modal-close:focus-visible { outline: 3px solid var(--accent); outline-offset: 2px; }
+.exercise-modal-content { display: grid; grid-template-columns: minmax(0, 1.35fr) minmax(18rem, 0.65fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; padding: clamp(1rem, 3vw, 2rem); }
+.exercise-modal-content .exercise-carousel { position: sticky; top: 7rem; margin: 0; }
 .site-footer { display: flex; justify-content: space-between; gap: 1rem; padding: 2rem clamp(1rem, 4vw, 4.5rem); border-top: 1px solid var(--border); color: var(--muted); font-size: 0.82rem; }
 
 @media (max-width: 880px) {
@@ -159,6 +186,8 @@ main { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
   .hero-proof { grid-template-columns: repeat(3, minmax(0, 1fr)); }
   .choice-grid, .week-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .workout-grid { grid-template-columns: 1fr; }
+  .exercise-modal-content { grid-template-columns: 1fr; }
+  .exercise-modal-content .exercise-carousel { position: static; }
   .plan-hero { display: block; }
   .plan-actions { justify-content: flex-start; }
 }
@@ -176,12 +205,15 @@ main { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
   .notice { align-items: flex-start; }
   .form-actions, .plan-actions { align-items: stretch; flex-direction: column; }
   .primary-button, .secondary-button { width: 100%; }
-  .exercise-card summary { grid-template-columns: 4.25rem minmax(0, 1fr); }
-  .exercise-card summary img { width: 4.25rem; }
+  .exercise-summary { grid-template-columns: 4.25rem minmax(0, 1fr); }
+  .exercise-summary img { width: 4.25rem; }
   .details-label { grid-column: 2; }
-  .exercise-body { padding-left: 0; }
+  .exercise-modal { width: calc(100vw - 0.75rem); max-height: calc(100dvh - 0.75rem); border-radius: 1rem; }
+  .exercise-modal-shell { max-height: calc(100dvh - 0.75rem); }
+  .exercise-modal-header { padding: 1rem; }
+  .exercise-modal-content { padding: 1rem; }
+  .carousel-slide img { height: min(52vh, 30rem); }
   .progression-row { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .source-section ol { columns: 1; }
   .site-footer { display: block; }
 }
 
@@ -207,9 +239,13 @@ main { width: min(1180px, calc(100% - 2rem)); margin-inline: auto; }
   .workout-grid { grid-template-columns: 1fr; }
   .workout-card + .workout-card { break-before: page; }
   .exercise-card { break-inside: avoid; }
-  .exercise-card > * { display: block; }
-  .exercise-card summary { display: grid; }
-  .exercise-body { display: block; padding-left: 5.85rem; }
-  .source-section ol { columns: 2; }
+  .exercise-summary { display: grid; }
+  .print-exercise-body { display: block; padding: 0 0 1.4rem 5.85rem; }
+  .exercise-carousel { break-inside: avoid; }
+  .carousel-slides { display: grid; grid-template-columns: repeat(3, 1fr); gap: 0.35rem; }
+  .carousel-slide { display: block; }
+  .carousel-slide figcaption { display: block; font-size: 7pt; }
+  .carousel-slide figcaption strong { margin-right: 0.3rem; }
+  .carousel-controls { display: none; }
   a { color: black; text-decoration: none; }
 }

@@ -140,8 +140,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/knee.svg",
-      "illustrationAlt": "Simple line illustration for supported sit-to-stand.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/sit-to-stand-supported/start.webp",
+          "alt": "Supported sit-to-stand: an adult exerciser in the start position.",
+          "caption": "Start: set up for supported sit-to-stand with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/sit-to-stand-supported/movement.webp",
+          "alt": "Supported sit-to-stand: an adult exerciser in the key movement position.",
+          "caption": "Move: Use your hands lightly on a stable chair as you stand."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/sit-to-stand-supported/finish.webp",
+          "alt": "Supported sit-to-stand: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Press through your whole foot and stand tall."
+        }
+      ],
       "cues": [
         "Use your hands lightly on a stable chair as you stand.",
         "Press through your whole foot and stand tall."
@@ -149,11 +167,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Builds confidence with the squat pattern using extra support.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=F4jloxszJ0c",
+        "demonstrationTitle": "Sit to stand — Level 1",
+        "publisher": "National Ageing Research Institute",
+        "evidenceUrl": "https://www.nari.net.au/FAQs/qr-sit-to-stand",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -290,8 +309,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/knee.svg",
-      "illustrationAlt": "Simple line illustration for chair squat.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/chair-squat/start.webp",
+          "alt": "Chair squat: an adult exerciser in the start position.",
+          "caption": "Start: set up for chair squat with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/chair-squat/movement.webp",
+          "alt": "Chair squat: an adult exerciser in the key movement position.",
+          "caption": "Move: Reach your hips back toward a stable chair."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/chair-squat/finish.webp",
+          "alt": "Chair squat: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your knees tracking in the same direction as your toes."
+        }
+      ],
       "cues": [
         "Reach your hips back toward a stable chair.",
         "Keep your knees tracking in the same direction as your toes."
@@ -299,11 +336,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Practises controlled sitting and standing strength.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=A_SkocZMcJk",
+        "demonstrationTitle": "Sit to stand — Level 2",
+        "publisher": "National Ageing Research Institute",
+        "evidenceUrl": "https://www.nari.net.au/FAQs/qr-sit-to-stand",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -440,8 +478,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/knee.svg",
-      "illustrationAlt": "Simple line illustration for bodyweight squat to chair target.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/bodyweight-squat-chair-target/start.webp",
+          "alt": "Bodyweight squat to chair target: an adult exerciser in the start position.",
+          "caption": "Start: set up for bodyweight squat to chair target with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/bodyweight-squat-chair-target/movement.webp",
+          "alt": "Bodyweight squat to chair target: an adult exerciser in the key movement position.",
+          "caption": "Move: Hover above the chair instead of sitting down."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/bodyweight-squat-chair-target/finish.webp",
+          "alt": "Bodyweight squat to chair target: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your chest comfortably tall and your whole foot grounded."
+        }
+      ],
       "cues": [
         "Hover above the chair instead of sitting down.",
         "Keep your chest comfortably tall and your whole foot grounded."
@@ -449,11 +505,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds control and range while keeping a clear depth target.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=jwLAIiIcuhs",
+        "demonstrationTitle": "Sit to stand — Level 3",
+        "publisher": "National Ageing Research Institute",
+        "evidenceUrl": "https://www.nari.net.au/FAQs/qr-sit-to-stand",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -591,8 +648,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for short-range glute bridge.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/short-range-glute-bridge/start.webp",
+          "alt": "Short-range glute bridge: an adult exerciser in the start position.",
+          "caption": "Start: set up for short-range glute bridge with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/short-range-glute-bridge/movement.webp",
+          "alt": "Short-range glute bridge: an adult exerciser in the key movement position.",
+          "caption": "Move: Press through your feet and lift only as high as feels comfortable."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/short-range-glute-bridge/finish.webp",
+          "alt": "Short-range glute bridge: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your ribs relaxed instead of arching your lower back."
+        }
+      ],
       "cues": [
         "Press through your feet and lift only as high as feels comfortable.",
         "Keep your ribs relaxed instead of arching your lower back."
@@ -600,11 +675,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Introduces hip extension with a deliberately small range.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=q_Vrgj9bW1c",
+        "demonstrationTitle": "Achieve stronger glutes with correct glute bridge form",
+        "publisher": "MoveU",
+        "evidenceUrl": "https://www.ouh.nhs.uk/oxparc/information/videos/bridging/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -741,8 +817,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for glute bridge.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/glute-bridge/start.webp",
+          "alt": "Glute bridge: an adult exerciser in the start position.",
+          "caption": "Start: set up for glute bridge with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/glute-bridge/movement.webp",
+          "alt": "Glute bridge: an adult exerciser in the key movement position.",
+          "caption": "Move: Press through your feet and lift your hips smoothly."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/glute-bridge/finish.webp",
+          "alt": "Glute bridge: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Finish with your body in a comfortable line from shoulders to knees."
+        }
+      ],
       "cues": [
         "Press through your feet and lift your hips smoothly.",
         "Finish with your body in a comfortable line from shoulders to knees."
@@ -750,11 +844,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Builds posterior-chain strength without standing balance demands.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=q_Vrgj9bW1c",
+        "demonstrationTitle": "Achieve stronger glutes with correct glute bridge form",
+        "publisher": "MoveU",
+        "evidenceUrl": "https://www.ouh.nhs.uk/oxparc/information/videos/bridging/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -891,8 +986,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for paused glute bridge.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/paused-glute-bridge/start.webp",
+          "alt": "Paused glute bridge: an adult exerciser in the start position.",
+          "caption": "Start: set up for paused glute bridge with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/paused-glute-bridge/movement.webp",
+          "alt": "Paused glute bridge: an adult exerciser in the key movement position.",
+          "caption": "Move: Pause briefly at the top while breathing normally."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/paused-glute-bridge/finish.webp",
+          "alt": "Paused glute bridge: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Lower with control and reset before the next repetition."
+        }
+      ],
       "cues": [
         "Pause briefly at the top while breathing normally.",
         "Lower with control and reset before the next repetition."
@@ -900,11 +1013,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds control to a familiar posterior-chain movement.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=q_Vrgj9bW1c",
+        "demonstrationTitle": "Achieve stronger glutes with correct glute bridge form",
+        "publisher": "MoveU",
+        "evidenceUrl": "https://www.ouh.nhs.uk/oxparc/information/videos/bridging/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1042,8 +1156,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for reduced-range wall hinge.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/reduced-wall-hinge/start.webp",
+          "alt": "Reduced-range wall hinge: an adult exerciser in the start position.",
+          "caption": "Start: set up for reduced-range wall hinge with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/reduced-wall-hinge/movement.webp",
+          "alt": "Reduced-range wall hinge: an adult exerciser in the key movement position.",
+          "caption": "Move: Stand close to a wall and send your hips back gently."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/reduced-wall-hinge/finish.webp",
+          "alt": "Reduced-range wall hinge: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your spine long and stop at a comfortable range."
+        }
+      ],
       "cues": [
         "Stand close to a wall and send your hips back gently.",
         "Keep your spine long and stop at a comfortable range."
@@ -1051,11 +1183,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Teaches the hip-hinge pattern with a short target distance.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=jJjzs7ss5Cs",
+        "demonstrationTitle": "#LiveWholeHealth: Body mechanics and the hip hinge",
+        "publisher": "Veterans Health Administration",
+        "evidenceUrl": "https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1192,8 +1325,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for wall hip-hinge drill.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/wall-hip-hinge/start.webp",
+          "alt": "Wall hip-hinge drill: an adult exerciser in the start position.",
+          "caption": "Start: set up for wall hip-hinge drill with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/wall-hip-hinge/movement.webp",
+          "alt": "Wall hip-hinge drill: an adult exerciser in the key movement position.",
+          "caption": "Move: Reach your hips back to touch the wall behind you."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/wall-hip-hinge/finish.webp",
+          "alt": "Wall hip-hinge drill: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep soft knees and feel the movement come from the hips."
+        }
+      ],
       "cues": [
         "Reach your hips back to touch the wall behind you.",
         "Keep soft knees and feel the movement come from the hips."
@@ -1201,11 +1352,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Makes the hip-hinge direction easy to understand.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=jJjzs7ss5Cs",
+        "demonstrationTitle": "#LiveWholeHealth: Body mechanics and the hip hinge",
+        "publisher": "Veterans Health Administration",
+        "evidenceUrl": "https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1340,8 +1492,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/posterior.svg",
-      "illustrationAlt": "Simple line illustration for unsupported bodyweight hinge.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/unsupported-bodyweight-hinge/start.webp",
+          "alt": "Unsupported bodyweight hinge: an adult exerciser in the start position.",
+          "caption": "Start: set up for unsupported bodyweight hinge with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/unsupported-bodyweight-hinge/movement.webp",
+          "alt": "Unsupported bodyweight hinge: an adult exerciser in the key movement position.",
+          "caption": "Move: Push your hips back without using the wall as a target."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/unsupported-bodyweight-hinge/finish.webp",
+          "alt": "Unsupported bodyweight hinge: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Stand by squeezing your glutes rather than leaning backward."
+        }
+      ],
       "cues": [
         "Push your hips back without using the wall as a target.",
         "Stand by squeezing your glutes rather than leaning backward."
@@ -1349,11 +1519,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Practises an independent hip hinge for daily lifting patterns.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=jJjzs7ss5Cs",
+        "demonstrationTitle": "#LiveWholeHealth: Body mechanics and the hip hinge",
+        "publisher": "Veterans Health Administration",
+        "evidenceUrl": "https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1491,8 +1662,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/push.svg",
-      "illustrationAlt": "Simple line illustration for more upright wall push-up.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/upright-wall-push-up/start.webp",
+          "alt": "More upright wall push-up: an adult exerciser in the start position.",
+          "caption": "Start: set up for more upright wall push-up with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/upright-wall-push-up/movement.webp",
+          "alt": "More upright wall push-up: an adult exerciser in the key movement position.",
+          "caption": "Move: Stand close enough to the wall that the movement feels easy."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/upright-wall-push-up/finish.webp",
+          "alt": "More upright wall push-up: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Move your body as one line from head to heel."
+        }
+      ],
       "cues": [
         "Stand close enough to the wall that the movement feels easy.",
         "Move your body as one line from head to heel."
@@ -1500,11 +1689,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Introduces pushing strength with a highly adjustable load.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=kmzcmFZ9NyY",
+        "demonstrationTitle": "Wall press up",
+        "publisher": "South Tees Hospitals NHS Foundation Trust",
+        "evidenceUrl": "https://www.southtees.nhs.uk/resources/combined-press-ups/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1641,8 +1831,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/push.svg",
-      "illustrationAlt": "Simple line illustration for wall push-up.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/wall-push-up/start.webp",
+          "alt": "Wall push-up: an adult exerciser in the start position.",
+          "caption": "Start: set up for wall push-up with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/wall-push-up/movement.webp",
+          "alt": "Wall push-up: an adult exerciser in the key movement position.",
+          "caption": "Move: Place your hands slightly wider than shoulder width."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/wall-push-up/finish.webp",
+          "alt": "Wall push-up: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Bend your elbows, bring your chest toward the wall, then press away."
+        }
+      ],
       "cues": [
         "Place your hands slightly wider than shoulder width.",
         "Bend your elbows, bring your chest toward the wall, then press away."
@@ -1650,11 +1858,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Builds upper-body pushing strength without floor transitions.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=wIPJvBQs7RA",
+        "demonstrationTitle": "How to do wall push ups: a guide from physical therapists",
+        "publisher": "Hinge Health",
+        "evidenceUrl": "https://www.southtees.nhs.uk/resources/combined-press-ups/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1791,8 +2000,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/push.svg",
-      "illustrationAlt": "Simple line illustration for knee push-up.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/knee-push-up/start.webp",
+          "alt": "Knee push-up: an adult exerciser in the start position.",
+          "caption": "Start: set up for knee push-up with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/knee-push-up/movement.webp",
+          "alt": "Knee push-up: an adult exerciser in the key movement position.",
+          "caption": "Move: Set a straight line from your head through your knees."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/knee-push-up/finish.webp",
+          "alt": "Knee push-up: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Lower only as far as you can keep your trunk steady."
+        }
+      ],
       "cues": [
         "Set a straight line from your head through your knees.",
         "Lower only as far as you can keep your trunk steady."
@@ -1800,11 +2027,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Increases pushing demand while retaining a shorter lever.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=LD9qrH7o2fY",
+        "demonstrationTitle": "Knee press up",
+        "publisher": "South Tees Hospitals NHS Foundation Trust",
+        "evidenceUrl": "https://www.southtees.nhs.uk/resources/combined-press-ups/",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -1942,8 +2170,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/upper-back.svg",
-      "illustrationAlt": "Simple line illustration for standing wall w.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/standing-wall-w/start.webp",
+          "alt": "Standing wall W: an adult exerciser in the start position.",
+          "caption": "Start: set up for standing wall w with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/standing-wall-w/movement.webp",
+          "alt": "Standing wall W: an adult exerciser in the key movement position.",
+          "caption": "Move: Stand comfortably against a wall with your arms in a W shape."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/standing-wall-w/finish.webp",
+          "alt": "Standing wall W: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Draw your shoulder blades gently down and together."
+        }
+      ],
       "cues": [
         "Stand comfortably against a wall with your arms in a W shape.",
         "Draw your shoulder blades gently down and together."
@@ -1951,11 +2197,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Introduces upper-back engagement in a supported position.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=cGjZ_XAvaXI",
+        "demonstrationTitle": "Upper-back exercises from a physical therapist",
+        "publisher": "Tone and Tighten",
+        "evidenceUrl": "https://www.youtube.com/watch?v=cGjZ_XAvaXI",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2092,8 +2339,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/upper-back.svg",
-      "illustrationAlt": "Simple line illustration for prone w raise.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/prone-w-raise/start.webp",
+          "alt": "Prone W raise: an adult exerciser in the start position.",
+          "caption": "Start: set up for prone w raise with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/prone-w-raise/movement.webp",
+          "alt": "Prone W raise: an adult exerciser in the key movement position.",
+          "caption": "Move: Lie face down with your arms in a W shape."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/prone-w-raise/finish.webp",
+          "alt": "Prone W raise: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Lift your hands slightly without shrugging your shoulders."
+        }
+      ],
       "cues": [
         "Lie face down with your arms in a W shape.",
         "Lift your hands slightly without shrugging your shoulders."
@@ -2101,11 +2366,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Builds awareness and endurance around the upper back.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=cGjZ_XAvaXI",
+        "demonstrationTitle": "Upper-back exercises from a physical therapist",
+        "publisher": "Tone and Tighten",
+        "evidenceUrl": "https://www.youtube.com/watch?v=cGjZ_XAvaXI",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2242,8 +2508,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/upper-back.svg",
-      "illustrationAlt": "Simple line illustration for prone reverse snow angel.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/prone-reverse-snow-angel/start.webp",
+          "alt": "Prone reverse snow angel: an adult exerciser in the start position.",
+          "caption": "Start: set up for prone reverse snow angel with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/prone-reverse-snow-angel/movement.webp",
+          "alt": "Prone reverse snow angel: an adult exerciser in the key movement position.",
+          "caption": "Move: Sweep your arms slowly while keeping them just above the floor."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/prone-reverse-snow-angel/finish.webp",
+          "alt": "Prone reverse snow angel: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Use a pain-free range and keep your neck relaxed."
+        }
+      ],
       "cues": [
         "Sweep your arms slowly while keeping them just above the floor.",
         "Use a pain-free range and keep your neck relaxed."
@@ -2251,11 +2535,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds controlled shoulder movement to upper-back endurance work.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=gfdkQcjRjHI",
+        "demonstrationTitle": "Reverse snow angels",
+        "publisher": "Impact Physical Therapy",
+        "evidenceUrl": "https://www.youtube.com/watch?v=gfdkQcjRjHI",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2393,8 +2678,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for heel taps.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/heel-taps/start.webp",
+          "alt": "Heel taps: an adult exerciser in the start position.",
+          "caption": "Start: set up for heel taps with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/heel-taps/movement.webp",
+          "alt": "Heel taps: an adult exerciser in the key movement position.",
+          "caption": "Move: Keep your lower back comfortably heavy on the floor."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/heel-taps/finish.webp",
+          "alt": "Heel taps: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Tap one heel away and return before changing sides."
+        }
+      ],
       "cues": [
         "Keep your lower back comfortably heavy on the floor.",
         "Tap one heel away and return before changing sides."
@@ -2402,11 +2705,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Introduces trunk control with one short moving lever.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
+        "demonstrationTitle": "Dead bug and progression for core strength",
+        "publisher": "[P]rehab",
+        "evidenceUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2543,8 +2847,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for dead bug.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/dead-bug/start.webp",
+          "alt": "Dead bug: an adult exerciser in the start position.",
+          "caption": "Start: set up for dead bug with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/dead-bug/movement.webp",
+          "alt": "Dead bug: an adult exerciser in the key movement position.",
+          "caption": "Move: Move the opposite arm and leg without arching your back."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/dead-bug/finish.webp",
+          "alt": "Dead bug: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Exhale as the limbs move away and return with control."
+        }
+      ],
       "cues": [
         "Move the opposite arm and leg without arching your back.",
         "Exhale as the limbs move away and return with control."
@@ -2552,11 +2874,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Builds trunk control while the arms and legs move.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
+        "demonstrationTitle": "Dead bug and progression for core strength",
+        "publisher": "[P]rehab",
+        "evidenceUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2693,8 +3016,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for extended dead bug.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/extended-dead-bug/start.webp",
+          "alt": "Extended dead bug: an adult exerciser in the start position.",
+          "caption": "Start: set up for extended dead bug with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/extended-dead-bug/movement.webp",
+          "alt": "Extended dead bug: an adult exerciser in the key movement position.",
+          "caption": "Move: Reach the moving arm and leg farther only if your trunk stays steady."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/extended-dead-bug/finish.webp",
+          "alt": "Extended dead bug: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Make the range smaller when your back begins to lift."
+        }
+      ],
       "cues": [
         "Reach the moving arm and leg farther only if your trunk stays steady.",
         "Make the range smaller when your back begins to lift."
@@ -2702,11 +3043,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Progresses dead-bug control through a longer lever.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
+        "demonstrationTitle": "Dead bug and progression for core strength",
+        "publisher": "[P]rehab",
+        "evidenceUrl": "https://www.youtube.com/watch?v=HdxDWtHwFmM",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2844,8 +3186,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for single-limb bird-dog reach.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/single-limb-bird-dog/start.webp",
+          "alt": "Single-limb bird-dog reach: an adult exerciser in the start position.",
+          "caption": "Start: set up for single-limb bird-dog reach with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/single-limb-bird-dog/movement.webp",
+          "alt": "Single-limb bird-dog reach: an adult exerciser in the key movement position.",
+          "caption": "Move: From hands and knees, reach only one arm or one leg."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/single-limb-bird-dog/finish.webp",
+          "alt": "Single-limb bird-dog reach: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your hips level and your movement slow."
+        }
+      ],
       "cues": [
         "From hands and knees, reach only one arm or one leg.",
         "Keep your hips level and your movement slow."
@@ -2853,11 +3213,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Introduces quadruped trunk stability one limb at a time.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
+        "demonstrationTitle": "NUH Physiotherapy — Bird dog",
+        "publisher": "National University Hospital Singapore",
+        "evidenceUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -2994,8 +3355,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for bird dog.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/bird-dog/start.webp",
+          "alt": "Bird dog: an adult exerciser in the start position.",
+          "caption": "Start: set up for bird dog with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/bird-dog/movement.webp",
+          "alt": "Bird dog: an adult exerciser in the key movement position.",
+          "caption": "Move: Reach the opposite arm and leg while keeping your hips square."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/bird-dog/finish.webp",
+          "alt": "Bird dog: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Return gently without shifting your weight quickly."
+        }
+      ],
       "cues": [
         "Reach the opposite arm and leg while keeping your hips square.",
         "Return gently without shifting your weight quickly."
@@ -3003,11 +3382,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Challenges trunk stability with opposite-limb movement.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
+        "demonstrationTitle": "NUH Physiotherapy — Bird dog",
+        "publisher": "National University Hospital Singapore",
+        "evidenceUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -3144,8 +3524,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/trunk.svg",
-      "illustrationAlt": "Simple line illustration for paused bird dog.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/paused-bird-dog/start.webp",
+          "alt": "Paused bird dog: an adult exerciser in the start position.",
+          "caption": "Start: set up for paused bird dog with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/paused-bird-dog/movement.webp",
+          "alt": "Paused bird dog: an adult exerciser in the key movement position.",
+          "caption": "Move: Pause in the extended position while breathing normally."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/paused-bird-dog/finish.webp",
+          "alt": "Paused bird dog: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep your ribs and pelvis facing the floor."
+        }
+      ],
       "cues": [
         "Pause in the extended position while breathing normally.",
         "Keep your ribs and pelvis facing the floor."
@@ -3153,11 +3551,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds control and time under tension to bird dog.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
+        "demonstrationTitle": "NUH Physiotherapy — Bird dog",
+        "publisher": "National University Hospital Singapore",
+        "evidenceUrl": "https://www.youtube.com/watch?v=_b2IhAjUpFk",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -3294,8 +3693,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/conditioning.svg",
-      "illustrationAlt": "Simple line illustration for supported march in place.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/supported-march/start.webp",
+          "alt": "Supported march in place: an adult exerciser in the start position.",
+          "caption": "Start: set up for supported march in place with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/supported-march/movement.webp",
+          "alt": "Supported march in place: an adult exerciser in the key movement position.",
+          "caption": "Move: Keep one hand near a stable chair and march at an easy pace."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/supported-march/finish.webp",
+          "alt": "Supported march in place: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Stay tall and place each foot down quietly."
+        }
+      ],
       "cues": [
         "Keep one hand near a stable chair and march at an easy pace.",
         "Stay tall and place each foot down quietly."
@@ -3303,11 +3720,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Raises movement volume while keeping balance support nearby.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=5OeMNRcjQQU",
+        "demonstrationTitle": "Dynamic warm-up: march in place",
+        "publisher": "Special Olympics",
+        "evidenceUrl": "https://resources.specialolympics.org/sports-essentials/sports-and-coaching/warm-up-and-cool-down-videos/dynamic-warm-up-march-in-place",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -3441,8 +3859,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/conditioning.svg",
-      "illustrationAlt": "Simple line illustration for march in place.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/march-in-place/start.webp",
+          "alt": "March in place: an adult exerciser in the start position.",
+          "caption": "Start: set up for march in place with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/march-in-place/movement.webp",
+          "alt": "March in place: an adult exerciser in the key movement position.",
+          "caption": "Move: March at a pace that lets you speak in full sentences."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/march-in-place/finish.webp",
+          "alt": "March in place: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Land softly and let your arms swing naturally."
+        }
+      ],
       "cues": [
         "March at a pace that lets you speak in full sentences.",
         "Land softly and let your arms swing naturally."
@@ -3450,11 +3886,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds accessible low-impact conditioning without equipment.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=5OeMNRcjQQU",
+        "demonstrationTitle": "Dynamic warm-up: march in place",
+        "publisher": "Special Olympics",
+        "evidenceUrl": "https://resources.specialolympics.org/sports-essentials/sports-and-coaching/warm-up-and-cool-down-videos/dynamic-warm-up-march-in-place",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     },
@@ -3588,8 +4025,26 @@
           }
         ]
       },
-      "illustrationPath": "/exercises/conditioning.svg",
-      "illustrationAlt": "Simple line illustration for low-impact step jack.",
+      "postureImages": [
+        {
+          "phase": "start",
+          "path": "/exercises/low-impact-step-jack/start.webp",
+          "alt": "Low-impact step jack: an adult exerciser in the start position.",
+          "caption": "Start: set up for low-impact step jack with stable support and a comfortable range."
+        },
+        {
+          "phase": "movement",
+          "path": "/exercises/low-impact-step-jack/movement.webp",
+          "alt": "Low-impact step jack: an adult exerciser in the key movement position.",
+          "caption": "Move: Step one foot out as your arms rise, then return and change sides."
+        },
+        {
+          "phase": "finish",
+          "path": "/exercises/low-impact-step-jack/finish.webp",
+          "alt": "Low-impact step jack: an adult exerciser completing the movement with control.",
+          "caption": "Finish: Keep the movement smooth and avoid jumping."
+        }
+      ],
       "cues": [
         "Step one foot out as your arms rise, then return and change sides.",
         "Keep the movement smooth and avoid jumping."
@@ -3597,11 +4052,12 @@
       "stopGuidance": "Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.",
       "educationalRationale": "Adds whole-body rhythm and a modest conditioning challenge.",
       "source": {
-        "demonstrationUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
-        "publisher": "NHS",
-        "evidenceUrl": "https://www.nhs.uk/live-well/exercise/strength-exercises/",
+        "demonstrationUrl": "https://www.youtube.com/watch?v=uLVt6u15L98",
+        "demonstrationTitle": "Jumping jacks with step-out modification",
+        "publisher": "National Academy of Sports Medicine",
+        "evidenceUrl": "https://www.nasm.org/resource-center/exercise-library/jumping-jacks",
         "reviewedBy": "Pending qualified fitness review",
-        "lastCheckedAt": "2026-09-01",
+        "lastCheckedAt": "2026-09-04",
         "availability": "available"
       }
     }

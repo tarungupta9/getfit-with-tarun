@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
-  <title id="title">Squat movement</title><desc id="desc">A person sitting back toward a chair.</desc>
-  <g fill="none" stroke="#173a34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="105" cy="35" r="16" fill="#d9f3e9"/><path d="M105 52l-8 48 38 16M97 74l-34 18M98 99l-28 35M135 116l31 34"/>
-    <path d="M150 94h45v56M150 150h58" stroke="#d87b49"/>
-  </g>
-</svg>

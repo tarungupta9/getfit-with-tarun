@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
-  <title id="title">Marching movement</title><desc id="desc">A person marching in place with one knee raised.</desc>
-  <g fill="none" stroke="#173a34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="116" cy="32" r="16" fill="#d9f3e9"/><path d="M116 49l4 65M119 73L80 54M119 73l38-20M120 114l-33 34M120 114l36 2 24 30"/>
-    <path d="M55 157h140" stroke="#d87b49"/>
-  </g>
-</svg>

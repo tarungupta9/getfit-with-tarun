@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
-  <title id="title">Pushing movement</title><desc id="desc">A person performing a wall push-up.</desc>
-  <g fill="none" stroke="#173a34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M195 20v140" stroke="#d87b49"/><circle cx="110" cy="42" r="16" fill="#d9f3e9"/>
-    <path d="M122 55l32 47 33-18M154 102l-25 48M154 102l18 49M140 78l47-5"/>
-  </g>
-</svg>

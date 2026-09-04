@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
-  <title id="title">Hip movement</title><desc id="desc">A person practising a supported hip movement.</desc>
-  <g fill="none" stroke="#173a34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="70" cy="50" r="16" fill="#d9f3e9"/><path d="M86 58l58 34 34-6M143 92l-15 42M143 92l35 42M98 69l15 39"/>
-    <path d="M30 150h180" stroke="#d87b49"/>
-  </g>
-</svg>
