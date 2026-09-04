@@ -94,12 +94,24 @@ export const PrescriptionTrackSchema = z.tuple([
 ])
 
 const SourceRecordSchema = z.object({
-  demonstrationUrl: z.url({ protocol: /^https$/ }),
+  demonstrationUrl: z
+    .url({ protocol: /^https$/ })
+    .refine((url) => ['www.youtube.com', 'youtube.com', 'youtu.be'].includes(new URL(url).hostname), {
+      message: 'Demonstration URL must be a direct YouTube link.',
+    }),
+  demonstrationTitle: z.string().min(1),
   publisher: z.string().min(1),
   evidenceUrl: z.url({ protocol: /^https$/ }),
   reviewedBy: z.string().min(1),
   lastCheckedAt: z.iso.date(),
   availability: z.enum(['available', 'unavailable']),
+})
+
+const ExercisePostureImageSchema = z.object({
+  phase: z.enum(['start', 'movement', 'finish']),
+  path: z.string().startsWith('/exercises/').endsWith('.webp'),
+  alt: z.string().min(1),
+  caption: z.string().min(1),
 })
 
 export const ExerciseDefinitionSchema = z
@@ -116,14 +128,34 @@ export const ExerciseDefinitionSchema = z
     harderExerciseId: z.string().nullable(),
     terminalEasierModification: z.string().min(1).optional(),
     tracks: z.partialRecord(StartingPointSchema, PrescriptionTrackSchema),
-    illustrationPath: z.string().startsWith('/exercises/'),
-    illustrationAlt: z.string().min(1),
+    postureImages: z.tuple([
+      ExercisePostureImageSchema,
+      ExercisePostureImageSchema,
+      ExercisePostureImageSchema,
+    ]),
     cues: z.array(z.string().min(1)).min(2).max(4),
     stopGuidance: z.string().min(1),
     educationalRationale: z.string().min(1),
     source: SourceRecordSchema,
   })
   .superRefine((exercise, context) => {
+    const expectedPhases = ['start', 'movement', 'finish'] as const
+    exercise.postureImages.forEach((image, index) => {
+      if (image.phase !== expectedPhases[index]) {
+        context.addIssue({
+          code: 'custom',
+          path: ['postureImages', index, 'phase'],
+          message: `Posture image ${index + 1} must be ${expectedPhases[index]}.`,
+        })
+      }
+    })
+    if (new Set(exercise.postureImages.map((image) => image.path)).size !== 3) {
+      context.addIssue({
+        code: 'custom',
+        path: ['postureImages'],
+        message: 'Posture image paths must be unique.',
+      })
+    }
     const declared = new Set(exercise.compatibleStartingPoints)
     for (const point of startingPoints) {
       const hasTrack = exercise.tracks[point] !== undefined

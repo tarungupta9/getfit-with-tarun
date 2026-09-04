@@ -1,4 +1,4 @@
-import { useEffect, useReducer, useRef } from 'react'
+import { useEffect, useReducer, useRef, useState } from 'react'
 import { content } from '../../content'
 import { generatePlan } from '../../domain/compiler'
 import { PlannerPreferencesSchema, weekdays } from '../../domain/schemas'
@@ -329,10 +329,20 @@ function PlanView({
   headingRef: React.RefObject<HTMLHeadingElement | null>
   onEdit: () => void
 }) {
+  const [activeExercise, setActiveExercise] = useState<ExerciseModalData | null>(null)
+  const exerciseTriggerRef = useRef<HTMLButtonElement | null>(null)
   const exerciseMap = new Map(content.exercises.map((exercise) => [exercise.id, exercise]))
   const firstSessions = plan.weeks.flatMap((week) => week.sessions)
   const sessionA = firstSessions.find((session) => session.label === 'A')
   const sessionB = firstSessions.find((session) => session.label === 'B')
+  const openExercise = (data: ExerciseModalData, trigger: HTMLButtonElement) => {
+    exerciseTriggerRef.current = trigger
+    setActiveExercise(data)
+  }
+  const closeExercise = () => {
+    setActiveExercise(null)
+    window.requestAnimationFrame(() => exerciseTriggerRef.current?.focus())
+  }
 
   return (
     <article className="plan-page">
@@ -380,24 +390,20 @@ function PlanView({
       <section className="plan-section" aria-labelledby="workouts-title">
         <div className="section-heading"><p className="eyebrow">Workout details</p><h2 id="workouts-title">Learn the movement, then do the work</h2></div>
         <div className="workout-grid">
-          {sessionA && <WorkoutDetails label="A" session={sessionA} plan={plan} exerciseMap={exerciseMap} />}
-          {sessionB && <WorkoutDetails label="B" session={sessionB} plan={plan} exerciseMap={exerciseMap} />}
+          {sessionA && <WorkoutDetails label="A" session={sessionA} plan={plan} exerciseMap={exerciseMap} onOpenExercise={openExercise} />}
+          {sessionB && <WorkoutDetails label="B" session={sessionB} plan={plan} exerciseMap={exerciseMap} onOpenExercise={openExercise} />}
         </div>
       </section>
 
-      <section className="plan-section source-section" aria-labelledby="sources-title">
-        <div className="section-heading"><p className="eyebrow">Source record</p><h2 id="sources-title">Draft demonstrations and provenance</h2></div>
-        <p>Every external demonstration is selected manually. Links open only when you choose them; the planner makes no background request.</p>
-        <ol>
-          {[...new Set(plan.weeks.flatMap((week) => week.sessions.flatMap((session) => session.exercises.map((exercise) => exercise.exerciseId))))].map((id) => {
-            const exercise = exerciseMap.get(id)
-            if (!exercise) return null
-            return <li key={id}><strong>{exercise.name}:</strong> {exercise.source.publisher}, draft reviewer: {exercise.source.reviewedBy}, checked {exercise.source.lastCheckedAt}. <a href={exercise.source.evidenceUrl} target="_blank" rel="noopener noreferrer">Evidence/source <span className="sr-only">for {exercise.name} (opens in a new tab)</span><span aria-hidden="true">↗</span></a></li>
-          })}
-        </ol>
-      </section>
+      {activeExercise && <ExerciseModal data={activeExercise} onClose={closeExercise} />}
     </article>
   )
+}
+
+interface ExerciseModalData {
+  exercise: ExerciseDefinition
+  easier: ExerciseDefinition | null
+  weeklySteps: readonly PrescriptionStep[]
 }
 
 function WorkoutDetails({
@@ -405,11 +411,13 @@ function WorkoutDetails({
   session,
   plan,
   exerciseMap,
+  onOpenExercise,
 }: {
   label: 'A' | 'B'
   session: GeneratedSession
   plan: GeneratedPlan
   exerciseMap: ReadonlyMap<string, ExerciseDefinition>
+  onOpenExercise: (data: ExerciseModalData, trigger: HTMLButtonElement) => void
 }) {
   const warmup = content.sequences.find((sequence) => sequence.id === session.warmupSequenceId)
   const cooldown = content.sequences.find((sequence) => sequence.id === session.cooldownSequenceId)
@@ -423,7 +431,7 @@ function WorkoutDetails({
           if (!exercise) return null
           const easier = exercise.easierExerciseId ? exerciseMap.get(exercise.easierExerciseId) : null
           const weeklySteps = plan.weeks.map((week) => week.sessions.find((item) => item.label === label)?.exercises.find((item) => item.exerciseId === exercise.id)?.prescription).filter((step): step is PrescriptionStep => step !== undefined)
-          return <ExerciseDetails key={exercise.id} exercise={exercise} easier={easier ?? null} weeklySteps={weeklySteps} />
+          return <ExerciseDetails key={exercise.id} exercise={exercise} easier={easier ?? null} weeklySteps={weeklySteps} onOpen={onOpenExercise} />
         })}
       </div>
       {cooldown && <SequenceDetails title="Cool-down" sequence={cooldown} />}
@@ -439,19 +447,81 @@ function ExerciseDetails({
   exercise,
   easier,
   weeklySteps,
+  onOpen,
 }: {
   exercise: ExerciseDefinition
   easier: ExerciseDefinition | null
   weeklySteps: readonly PrescriptionStep[]
+  onOpen: (data: ExerciseModalData, trigger: HTMLButtonElement) => void
 }) {
   return (
-    <details className="exercise-card">
-      <summary>
-        <img src={exercise.illustrationPath} alt={exercise.illustrationAlt} width="120" height="90" loading="lazy" />
+    <div className="exercise-card">
+      <button
+        aria-haspopup="dialog"
+        className="exercise-summary"
+        onClick={(event) => onOpen({ exercise, easier, weeklySteps }, event.currentTarget)}
+        type="button"
+      >
+        <img src={exercise.postureImages[0].path} alt="" width="120" height="120" loading="lazy" decoding="async" />
         <span><strong>{exercise.name}</strong><small>{formatPrescription(weeklySteps[0])}</small></span>
         <span className="details-label">Details</span>
-      </summary>
-      <div className="exercise-body">
+      </button>
+      <div className="print-exercise-body" aria-hidden="true">
+        <ExerciseInstructions exercise={exercise} easier={easier} weeklySteps={weeklySteps} includeMedia={false} />
+      </div>
+    </div>
+  )
+}
+
+function ExerciseModal({ data, onClose }: { data: ExerciseModalData; onClose: () => void }) {
+  const dialogRef = useRef<HTMLDialogElement>(null)
+  const closeButtonRef = useRef<HTMLButtonElement>(null)
+
+  useEffect(() => {
+    const dialog = dialogRef.current
+    if (!dialog) return
+    dialog.showModal()
+    document.body.classList.add('modal-open')
+    closeButtonRef.current?.focus()
+    return () => {
+      document.body.classList.remove('modal-open')
+      if (dialog.open) dialog.close()
+    }
+  }, [])
+
+  return (
+    <dialog
+      aria-labelledby={`exercise-modal-${data.exercise.id}`}
+      className="exercise-modal no-print"
+      onCancel={(event) => { event.preventDefault(); onClose() }}
+      onMouseDown={(event) => { if (event.target === event.currentTarget) onClose() }}
+      ref={dialogRef}
+    >
+      <div className="exercise-modal-shell">
+        <header className="exercise-modal-header">
+          <div>
+            <p className="eyebrow">Exercise details</p>
+            <h2 id={`exercise-modal-${data.exercise.id}`}>{data.exercise.name}</h2>
+            <p>{formatPrescription(data.weeklySteps[0])}</p>
+          </div>
+          <button ref={closeButtonRef} className="modal-close" onClick={onClose} type="button" aria-label={`Close ${data.exercise.name} details`}>×</button>
+        </header>
+        <ExerciseInstructions {...data} includeMedia />
+      </div>
+    </dialog>
+  )
+}
+
+function ExerciseInstructions({
+  exercise,
+  easier,
+  weeklySteps,
+  includeMedia,
+}: ExerciseModalData & { includeMedia: boolean }) {
+  return (
+    <div className={includeMedia ? 'exercise-modal-content' : undefined}>
+      {includeMedia && <ExerciseMediaCarousel exercise={exercise} />}
+      <div className="exercise-instructions">
         <p>{exercise.educationalRationale}</p>
         <ul>{exercise.cues.map((cue) => <li key={cue}>{cue}</li>)}</ul>
         <div className="progression-row">
@@ -460,10 +530,67 @@ function ExerciseDetails({
         <p><strong>Easier option:</strong> {easier?.name ?? exercise.terminalEasierModification}</p>
         <p className="stop-copy">{exercise.stopGuidance}</p>
         {exercise.source.availability === 'available' ? (
-          <a href={exercise.source.demonstrationUrl} target="_blank" rel="noopener noreferrer">Watch draft demonstration <span className="sr-only">for {exercise.name} (opens in a new tab)</span><span aria-hidden="true">↗</span></a>
+          <a className="form-video-link" href={exercise.source.demonstrationUrl} target="_blank" rel="noopener noreferrer" title={exercise.source.demonstrationTitle}>Watch correct form on YouTube <span className="sr-only">for {exercise.name} (opens in a new tab)</span><span aria-hidden="true">↗</span></a>
         ) : <p>External demonstration currently unavailable. Use the written cues above.</p>}
       </div>
-    </details>
+    </div>
+  )
+}
+
+function ExerciseMediaCarousel({ exercise }: { exercise: ExerciseDefinition }) {
+  const [activeIndex, setActiveIndex] = useState(0)
+  const frameCount = exercise.postureImages.length
+  const selectFrame = (index: number) => {
+    setActiveIndex((index + frameCount) % frameCount)
+  }
+
+  return (
+    <section
+      className="exercise-carousel no-print-controls"
+      aria-label={`${exercise.name} posture carousel`}
+      onKeyDown={(event) => {
+        if (event.key === 'ArrowLeft') {
+          event.preventDefault()
+          selectFrame(activeIndex - 1)
+        }
+        if (event.key === 'ArrowRight') {
+          event.preventDefault()
+          selectFrame(activeIndex + 1)
+        }
+      }}
+      role="region"
+      tabIndex={0}
+    >
+      <div className="carousel-slides">
+        {exercise.postureImages.map((image, index) => (
+          <figure
+            aria-hidden={index !== activeIndex}
+            className={`carousel-slide${index === activeIndex ? ' carousel-slide-active' : ''}`}
+            key={image.phase}
+          >
+            <img src={image.path} alt={image.alt} width="960" height="960" loading="lazy" decoding="async" />
+            <figcaption><strong>{image.phase}</strong>{image.caption}</figcaption>
+          </figure>
+        ))}
+      </div>
+      <div className="carousel-controls">
+        <button type="button" onClick={() => selectFrame(activeIndex - 1)} aria-label={`Previous posture for ${exercise.name}`}><span aria-hidden="true">←</span></button>
+        <div className="carousel-dots" aria-label="Choose posture">
+          {exercise.postureImages.map((image, index) => (
+            <button
+              aria-label={`Show ${image.phase} posture`}
+              aria-pressed={index === activeIndex}
+              className={index === activeIndex ? 'carousel-dot-active' : undefined}
+              key={image.phase}
+              onClick={() => selectFrame(index)}
+              type="button"
+            />
+          ))}
+        </div>
+        <span className="carousel-status" aria-live="polite">{activeIndex + 1} of {frameCount}</span>
+        <button type="button" onClick={() => selectFrame(activeIndex + 1)} aria-label={`Next posture for ${exercise.name}`}><span aria-hidden="true">→</span></button>
+      </div>
+    </section>
   )
 }
 

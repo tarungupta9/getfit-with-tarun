@@ -67,11 +67,19 @@ export type PrescriptionTrack = readonly [
 
 export interface SourceRecord {
   demonstrationUrl: string
+  demonstrationTitle: string
   publisher: string
   evidenceUrl: string
   reviewedBy: string
   lastCheckedAt: string
   availability: 'available' | 'unavailable'
+}
+
+export interface ExercisePostureImage {
+  phase: 'start' | 'movement' | 'finish'
+  path: string
+  alt: string
+  caption: string
 }
 
 export interface ExerciseDefinition {
@@ -87,8 +95,11 @@ export interface ExerciseDefinition {
   harderExerciseId: string | null
   terminalEasierModification?: string
   tracks: Partial<Record<StartingPoint, PrescriptionTrack>>
-  illustrationPath: string
-  illustrationAlt: string
+  postureImages: readonly [
+    ExercisePostureImage,
+    ExercisePostureImage,
+    ExercisePostureImage,
+  ]
   cues: readonly string[]
   stopGuidance: string
   educationalRationale: string

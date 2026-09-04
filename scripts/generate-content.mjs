@@ -8,14 +8,46 @@ const contentDirectory = resolve(scriptDirectory, '../src/content')
 const points = ['new', 'lightly_active', 'returning']
 const stopGuidance =
   'Stop if you feel sharp pain, chest discomfort, faintness, or unusual shortness of breath.'
-const source = {
-  demonstrationUrl:
-    'https://www.nhs.uk/live-well/exercise/strength-exercises/',
-  publisher: 'NHS',
-  evidenceUrl: 'https://www.nhs.uk/live-well/exercise/strength-exercises/',
-  reviewedBy: 'Pending qualified fitness review',
-  lastCheckedAt: '2026-09-01',
-  availability: 'available',
+const reviewedBy = 'Pending qualified fitness review'
+const lastCheckedAt = '2026-09-04'
+
+function videoSource(demonstrationUrl, demonstrationTitle, publisher, evidenceUrl) {
+  return {
+    demonstrationUrl,
+    demonstrationTitle,
+    publisher,
+    evidenceUrl,
+    reviewedBy,
+    lastCheckedAt,
+    availability: 'available',
+  }
+}
+
+const videoSources = {
+  'sit-to-stand-supported': videoSource('https://www.youtube.com/watch?v=F4jloxszJ0c', 'Sit to stand — Level 1', 'National Ageing Research Institute', 'https://www.nari.net.au/FAQs/qr-sit-to-stand'),
+  'chair-squat': videoSource('https://www.youtube.com/watch?v=A_SkocZMcJk', 'Sit to stand — Level 2', 'National Ageing Research Institute', 'https://www.nari.net.au/FAQs/qr-sit-to-stand'),
+  'bodyweight-squat-chair-target': videoSource('https://www.youtube.com/watch?v=jwLAIiIcuhs', 'Sit to stand — Level 3', 'National Ageing Research Institute', 'https://www.nari.net.au/FAQs/qr-sit-to-stand'),
+  'short-range-glute-bridge': videoSource('https://www.youtube.com/watch?v=q_Vrgj9bW1c', 'Achieve stronger glutes with correct glute bridge form', 'MoveU', 'https://www.ouh.nhs.uk/oxparc/information/videos/bridging/'),
+  'glute-bridge': videoSource('https://www.youtube.com/watch?v=q_Vrgj9bW1c', 'Achieve stronger glutes with correct glute bridge form', 'MoveU', 'https://www.ouh.nhs.uk/oxparc/information/videos/bridging/'),
+  'paused-glute-bridge': videoSource('https://www.youtube.com/watch?v=q_Vrgj9bW1c', 'Achieve stronger glutes with correct glute bridge form', 'MoveU', 'https://www.ouh.nhs.uk/oxparc/information/videos/bridging/'),
+  'reduced-wall-hinge': videoSource('https://www.youtube.com/watch?v=jJjzs7ss5Cs', '#LiveWholeHealth: Body mechanics and the hip hinge', 'Veterans Health Administration', 'https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back'),
+  'wall-hip-hinge': videoSource('https://www.youtube.com/watch?v=jJjzs7ss5Cs', '#LiveWholeHealth: Body mechanics and the hip hinge', 'Veterans Health Administration', 'https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back'),
+  'unsupported-bodyweight-hinge': videoSource('https://www.youtube.com/watch?v=jJjzs7ss5Cs', '#LiveWholeHealth: Body mechanics and the hip hinge', 'Veterans Health Administration', 'https://www.myhealth.va.gov/mhv-portal-web/ss20210209-hip-hinge-lower-back'),
+  'upright-wall-push-up': videoSource('https://www.youtube.com/watch?v=kmzcmFZ9NyY', 'Wall press up', 'South Tees Hospitals NHS Foundation Trust', 'https://www.southtees.nhs.uk/resources/combined-press-ups/'),
+  'wall-push-up': videoSource('https://www.youtube.com/watch?v=wIPJvBQs7RA', 'How to do wall push ups: a guide from physical therapists', 'Hinge Health', 'https://www.southtees.nhs.uk/resources/combined-press-ups/'),
+  'knee-push-up': videoSource('https://www.youtube.com/watch?v=LD9qrH7o2fY', 'Knee press up', 'South Tees Hospitals NHS Foundation Trust', 'https://www.southtees.nhs.uk/resources/combined-press-ups/'),
+  'standing-wall-w': videoSource('https://www.youtube.com/watch?v=cGjZ_XAvaXI', 'Upper-back exercises from a physical therapist', 'Tone and Tighten', 'https://www.youtube.com/watch?v=cGjZ_XAvaXI'),
+  'prone-w-raise': videoSource('https://www.youtube.com/watch?v=cGjZ_XAvaXI', 'Upper-back exercises from a physical therapist', 'Tone and Tighten', 'https://www.youtube.com/watch?v=cGjZ_XAvaXI'),
+  'prone-reverse-snow-angel': videoSource('https://www.youtube.com/watch?v=gfdkQcjRjHI', 'Reverse snow angels', 'Impact Physical Therapy', 'https://www.youtube.com/watch?v=gfdkQcjRjHI'),
+  'heel-taps': videoSource('https://www.youtube.com/watch?v=HdxDWtHwFmM', 'Dead bug and progression for core strength', '[P]rehab', 'https://www.youtube.com/watch?v=HdxDWtHwFmM'),
+  'dead-bug': videoSource('https://www.youtube.com/watch?v=HdxDWtHwFmM', 'Dead bug and progression for core strength', '[P]rehab', 'https://www.youtube.com/watch?v=HdxDWtHwFmM'),
+  'extended-dead-bug': videoSource('https://www.youtube.com/watch?v=HdxDWtHwFmM', 'Dead bug and progression for core strength', '[P]rehab', 'https://www.youtube.com/watch?v=HdxDWtHwFmM'),
+  'single-limb-bird-dog': videoSource('https://www.youtube.com/watch?v=_b2IhAjUpFk', 'NUH Physiotherapy — Bird dog', 'National University Hospital Singapore', 'https://www.youtube.com/watch?v=_b2IhAjUpFk'),
+  'bird-dog': videoSource('https://www.youtube.com/watch?v=_b2IhAjUpFk', 'NUH Physiotherapy — Bird dog', 'National University Hospital Singapore', 'https://www.youtube.com/watch?v=_b2IhAjUpFk'),
+  'paused-bird-dog': videoSource('https://www.youtube.com/watch?v=_b2IhAjUpFk', 'NUH Physiotherapy — Bird dog', 'National University Hospital Singapore', 'https://www.youtube.com/watch?v=_b2IhAjUpFk'),
+  'supported-march': videoSource('https://www.youtube.com/watch?v=5OeMNRcjQQU', 'Dynamic warm-up: march in place', 'Special Olympics', 'https://resources.specialolympics.org/sports-essentials/sports-and-coaching/warm-up-and-cool-down-videos/dynamic-warm-up-march-in-place'),
+  'march-in-place': videoSource('https://www.youtube.com/watch?v=5OeMNRcjQQU', 'Dynamic warm-up: march in place', 'Special Olympics', 'https://resources.specialolympics.org/sports-essentials/sports-and-coaching/warm-up-and-cool-down-videos/dynamic-warm-up-march-in-place'),
+  'low-impact-step-jack': videoSource('https://www.youtube.com/watch?v=uLVt6u15L98', 'Jumping jacks with step-out modification', 'National Academy of Sports Medicine', 'https://www.nasm.org/resource-center/exercise-library/jumping-jacks'),
 }
 
 function repTrack(startingPoint) {
@@ -85,30 +117,30 @@ function timedTrack(startingPoint) {
 }
 
 const definitions = [
-  ['sit-to-stand-supported', 'Supported sit-to-stand', 'knee', 1, ['stable_chair'], 'knee.svg', 'Use your hands lightly on a stable chair as you stand.', 'Press through your whole foot and stand tall.', 'Builds confidence with the squat pattern using extra support.'],
-  ['chair-squat', 'Chair squat', 'knee', 2, ['stable_chair'], 'knee.svg', 'Reach your hips back toward a stable chair.', 'Keep your knees tracking in the same direction as your toes.', 'Practises controlled sitting and standing strength.'],
-  ['bodyweight-squat-chair-target', 'Bodyweight squat to chair target', 'knee', 3, ['stable_chair'], 'knee.svg', 'Hover above the chair instead of sitting down.', 'Keep your chest comfortably tall and your whole foot grounded.', 'Adds control and range while keeping a clear depth target.'],
-  ['short-range-glute-bridge', 'Short-range glute bridge', 'posterior_hip', 1, ['floor'], 'posterior.svg', 'Press through your feet and lift only as high as feels comfortable.', 'Keep your ribs relaxed instead of arching your lower back.', 'Introduces hip extension with a deliberately small range.'],
-  ['glute-bridge', 'Glute bridge', 'posterior_hip', 2, ['floor'], 'posterior.svg', 'Press through your feet and lift your hips smoothly.', 'Finish with your body in a comfortable line from shoulders to knees.', 'Builds posterior-chain strength without standing balance demands.'],
-  ['paused-glute-bridge', 'Paused glute bridge', 'posterior_hip', 3, ['floor'], 'posterior.svg', 'Pause briefly at the top while breathing normally.', 'Lower with control and reset before the next repetition.', 'Adds control to a familiar posterior-chain movement.'],
-  ['reduced-wall-hinge', 'Reduced-range wall hinge', 'posterior_hip', 1, ['wall'], 'posterior.svg', 'Stand close to a wall and send your hips back gently.', 'Keep your spine long and stop at a comfortable range.', 'Teaches the hip-hinge pattern with a short target distance.'],
-  ['wall-hip-hinge', 'Wall hip-hinge drill', 'posterior_hip', 2, ['wall'], 'posterior.svg', 'Reach your hips back to touch the wall behind you.', 'Keep soft knees and feel the movement come from the hips.', 'Makes the hip-hinge direction easy to understand.'],
-  ['unsupported-bodyweight-hinge', 'Unsupported bodyweight hinge', 'posterior_hip', 3, [], 'posterior.svg', 'Push your hips back without using the wall as a target.', 'Stand by squeezing your glutes rather than leaning backward.', 'Practises an independent hip hinge for daily lifting patterns.'],
-  ['upright-wall-push-up', 'More upright wall push-up', 'push', 1, ['wall'], 'push.svg', 'Stand close enough to the wall that the movement feels easy.', 'Move your body as one line from head to heel.', 'Introduces pushing strength with a highly adjustable load.'],
-  ['wall-push-up', 'Wall push-up', 'push', 2, ['wall'], 'push.svg', 'Place your hands slightly wider than shoulder width.', 'Bend your elbows, bring your chest toward the wall, then press away.', 'Builds upper-body pushing strength without floor transitions.'],
-  ['knee-push-up', 'Knee push-up', 'push', 3, ['floor'], 'push.svg', 'Set a straight line from your head through your knees.', 'Lower only as far as you can keep your trunk steady.', 'Increases pushing demand while retaining a shorter lever.'],
-  ['standing-wall-w', 'Standing wall W', 'upper_back', 1, ['wall'], 'upper-back.svg', 'Stand comfortably against a wall with your arms in a W shape.', 'Draw your shoulder blades gently down and together.', 'Introduces upper-back engagement in a supported position.'],
-  ['prone-w-raise', 'Prone W raise', 'upper_back', 2, ['floor'], 'upper-back.svg', 'Lie face down with your arms in a W shape.', 'Lift your hands slightly without shrugging your shoulders.', 'Builds awareness and endurance around the upper back.'],
-  ['prone-reverse-snow-angel', 'Prone reverse snow angel', 'upper_back', 3, ['floor'], 'upper-back.svg', 'Sweep your arms slowly while keeping them just above the floor.', 'Use a pain-free range and keep your neck relaxed.', 'Adds controlled shoulder movement to upper-back endurance work.'],
-  ['heel-taps', 'Heel taps', 'trunk', 1, ['floor'], 'trunk.svg', 'Keep your lower back comfortably heavy on the floor.', 'Tap one heel away and return before changing sides.', 'Introduces trunk control with one short moving lever.'],
-  ['dead-bug', 'Dead bug', 'trunk', 2, ['floor'], 'trunk.svg', 'Move the opposite arm and leg without arching your back.', 'Exhale as the limbs move away and return with control.', 'Builds trunk control while the arms and legs move.'],
-  ['extended-dead-bug', 'Extended dead bug', 'trunk', 3, ['floor'], 'trunk.svg', 'Reach the moving arm and leg farther only if your trunk stays steady.', 'Make the range smaller when your back begins to lift.', 'Progresses dead-bug control through a longer lever.'],
-  ['single-limb-bird-dog', 'Single-limb bird-dog reach', 'trunk', 1, ['floor'], 'trunk.svg', 'From hands and knees, reach only one arm or one leg.', 'Keep your hips level and your movement slow.', 'Introduces quadruped trunk stability one limb at a time.'],
-  ['bird-dog', 'Bird dog', 'trunk', 2, ['floor'], 'trunk.svg', 'Reach the opposite arm and leg while keeping your hips square.', 'Return gently without shifting your weight quickly.', 'Challenges trunk stability with opposite-limb movement.'],
-  ['paused-bird-dog', 'Paused bird dog', 'trunk', 3, ['floor'], 'trunk.svg', 'Pause in the extended position while breathing normally.', 'Keep your ribs and pelvis facing the floor.', 'Adds control and time under tension to bird dog.'],
-  ['supported-march', 'Supported march in place', 'conditioning', 1, ['stable_chair'], 'conditioning.svg', 'Keep one hand near a stable chair and march at an easy pace.', 'Stay tall and place each foot down quietly.', 'Raises movement volume while keeping balance support nearby.'],
-  ['march-in-place', 'March in place', 'conditioning', 2, [], 'conditioning.svg', 'March at a pace that lets you speak in full sentences.', 'Land softly and let your arms swing naturally.', 'Adds accessible low-impact conditioning without equipment.'],
-  ['low-impact-step-jack', 'Low-impact step jack', 'conditioning', 3, [], 'conditioning.svg', 'Step one foot out as your arms rise, then return and change sides.', 'Keep the movement smooth and avoid jumping.', 'Adds whole-body rhythm and a modest conditioning challenge.'],
+  ['sit-to-stand-supported', 'Supported sit-to-stand', 'knee', 1, ['stable_chair'], 'Use your hands lightly on a stable chair as you stand.', 'Press through your whole foot and stand tall.', 'Builds confidence with the squat pattern using extra support.'],
+  ['chair-squat', 'Chair squat', 'knee', 2, ['stable_chair'], 'Reach your hips back toward a stable chair.', 'Keep your knees tracking in the same direction as your toes.', 'Practises controlled sitting and standing strength.'],
+  ['bodyweight-squat-chair-target', 'Bodyweight squat to chair target', 'knee', 3, ['stable_chair'], 'Hover above the chair instead of sitting down.', 'Keep your chest comfortably tall and your whole foot grounded.', 'Adds control and range while keeping a clear depth target.'],
+  ['short-range-glute-bridge', 'Short-range glute bridge', 'posterior_hip', 1, ['floor'], 'Press through your feet and lift only as high as feels comfortable.', 'Keep your ribs relaxed instead of arching your lower back.', 'Introduces hip extension with a deliberately small range.'],
+  ['glute-bridge', 'Glute bridge', 'posterior_hip', 2, ['floor'], 'Press through your feet and lift your hips smoothly.', 'Finish with your body in a comfortable line from shoulders to knees.', 'Builds posterior-chain strength without standing balance demands.'],
+  ['paused-glute-bridge', 'Paused glute bridge', 'posterior_hip', 3, ['floor'], 'Pause briefly at the top while breathing normally.', 'Lower with control and reset before the next repetition.', 'Adds control to a familiar posterior-chain movement.'],
+  ['reduced-wall-hinge', 'Reduced-range wall hinge', 'posterior_hip', 1, ['wall'], 'Stand close to a wall and send your hips back gently.', 'Keep your spine long and stop at a comfortable range.', 'Teaches the hip-hinge pattern with a short target distance.'],
+  ['wall-hip-hinge', 'Wall hip-hinge drill', 'posterior_hip', 2, ['wall'], 'Reach your hips back to touch the wall behind you.', 'Keep soft knees and feel the movement come from the hips.', 'Makes the hip-hinge direction easy to understand.'],
+  ['unsupported-bodyweight-hinge', 'Unsupported bodyweight hinge', 'posterior_hip', 3, [], 'Push your hips back without using the wall as a target.', 'Stand by squeezing your glutes rather than leaning backward.', 'Practises an independent hip hinge for daily lifting patterns.'],
+  ['upright-wall-push-up', 'More upright wall push-up', 'push', 1, ['wall'], 'Stand close enough to the wall that the movement feels easy.', 'Move your body as one line from head to heel.', 'Introduces pushing strength with a highly adjustable load.'],
+  ['wall-push-up', 'Wall push-up', 'push', 2, ['wall'], 'Place your hands slightly wider than shoulder width.', 'Bend your elbows, bring your chest toward the wall, then press away.', 'Builds upper-body pushing strength without floor transitions.'],
+  ['knee-push-up', 'Knee push-up', 'push', 3, ['floor'], 'Set a straight line from your head through your knees.', 'Lower only as far as you can keep your trunk steady.', 'Increases pushing demand while retaining a shorter lever.'],
+  ['standing-wall-w', 'Standing wall W', 'upper_back', 1, ['wall'], 'Stand comfortably against a wall with your arms in a W shape.', 'Draw your shoulder blades gently down and together.', 'Introduces upper-back engagement in a supported position.'],
+  ['prone-w-raise', 'Prone W raise', 'upper_back', 2, ['floor'], 'Lie face down with your arms in a W shape.', 'Lift your hands slightly without shrugging your shoulders.', 'Builds awareness and endurance around the upper back.'],
+  ['prone-reverse-snow-angel', 'Prone reverse snow angel', 'upper_back', 3, ['floor'], 'Sweep your arms slowly while keeping them just above the floor.', 'Use a pain-free range and keep your neck relaxed.', 'Adds controlled shoulder movement to upper-back endurance work.'],
+  ['heel-taps', 'Heel taps', 'trunk', 1, ['floor'], 'Keep your lower back comfortably heavy on the floor.', 'Tap one heel away and return before changing sides.', 'Introduces trunk control with one short moving lever.'],
+  ['dead-bug', 'Dead bug', 'trunk', 2, ['floor'], 'Move the opposite arm and leg without arching your back.', 'Exhale as the limbs move away and return with control.', 'Builds trunk control while the arms and legs move.'],
+  ['extended-dead-bug', 'Extended dead bug', 'trunk', 3, ['floor'], 'Reach the moving arm and leg farther only if your trunk stays steady.', 'Make the range smaller when your back begins to lift.', 'Progresses dead-bug control through a longer lever.'],
+  ['single-limb-bird-dog', 'Single-limb bird-dog reach', 'trunk', 1, ['floor'], 'From hands and knees, reach only one arm or one leg.', 'Keep your hips level and your movement slow.', 'Introduces quadruped trunk stability one limb at a time.'],
+  ['bird-dog', 'Bird dog', 'trunk', 2, ['floor'], 'Reach the opposite arm and leg while keeping your hips square.', 'Return gently without shifting your weight quickly.', 'Challenges trunk stability with opposite-limb movement.'],
+  ['paused-bird-dog', 'Paused bird dog', 'trunk', 3, ['floor'], 'Pause in the extended position while breathing normally.', 'Keep your ribs and pelvis facing the floor.', 'Adds control and time under tension to bird dog.'],
+  ['supported-march', 'Supported march in place', 'conditioning', 1, ['stable_chair'], 'Keep one hand near a stable chair and march at an easy pace.', 'Stay tall and place each foot down quietly.', 'Raises movement volume while keeping balance support nearby.'],
+  ['march-in-place', 'March in place', 'conditioning', 2, [], 'March at a pace that lets you speak in full sentences.', 'Land softly and let your arms swing naturally.', 'Adds accessible low-impact conditioning without equipment.'],
+  ['low-impact-step-jack', 'Low-impact step jack', 'conditioning', 3, [], 'Step one foot out as your arms rise, then return and change sides.', 'Keep the movement smooth and avoid jumping.', 'Adds whole-body rhythm and a modest conditioning challenge.'],
 ]
 
 const progressionChains = [
@@ -126,7 +158,7 @@ const progressionChainById = new Map(
 )
 
 const exercises = definitions.map((definition, index) => {
-  const [id, name, family, difficulty, setup, illustration, cueOne, cueTwo, rationale] = definition
+  const [id, name, family, difficulty, setup, cueOne, cueTwo, rationale] = definition
   const familyIds = progressionChainById.get(id)
   if (!familyIds) throw new Error(`Missing progression chain for ${id}.`)
   const familyIndex = familyIds.indexOf(id)
@@ -149,12 +181,30 @@ const exercises = definitions.map((definition, index) => {
     tracks: Object.fromEntries(
       points.map((point) => [point, mode === 'timed' ? timedTrack(point) : repTrack(point)]),
     ),
-    illustrationPath: `/exercises/${illustration}`,
-    illustrationAlt: `Simple line illustration for ${name.toLowerCase()}.`,
+    postureImages: [
+      {
+        phase: 'start',
+        path: `/exercises/${id}/start.webp`,
+        alt: `${name}: an adult exerciser in the start position.`,
+        caption: `Start: set up for ${name.toLowerCase()} with stable support and a comfortable range.`,
+      },
+      {
+        phase: 'movement',
+        path: `/exercises/${id}/movement.webp`,
+        alt: `${name}: an adult exerciser in the key movement position.`,
+        caption: `Move: ${cueOne}`,
+      },
+      {
+        phase: 'finish',
+        path: `/exercises/${id}/finish.webp`,
+        alt: `${name}: an adult exerciser completing the movement with control.`,
+        caption: `Finish: ${cueTwo}`,
+      },
+    ],
     cues: [cueOne, cueTwo],
     stopGuidance,
     educationalRationale: rationale,
-    source,
+    source: videoSources[id],
   }
 })
 

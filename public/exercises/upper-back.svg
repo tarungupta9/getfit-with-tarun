@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" role="img" aria-labelledby="title desc">
-  <title id="title">Upper-back movement</title><desc id="desc">A person holding their arms in a W position.</desc>
-  <g fill="none" stroke="#173a34" stroke-width="8" stroke-linecap="round" stroke-linejoin="round">
-    <circle cx="120" cy="38" r="16" fill="#d9f3e9"/><path d="M120 55v65M120 75L82 95 55 68M120 75l38 20 27-27M120 120l-25 38M120 120l25 38"/>
-    <path d="M85 83l8 10M155 83l-8 10" stroke="#d87b49"/>
-  </g>
-</svg>

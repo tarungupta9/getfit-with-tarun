@@ -2,6 +2,8 @@
 
 A browser-only prototype that turns a beginner's available time, weekdays, and starting point into an explained four-week home-fitness plan.
 
+Product progression is recorded in [`docs/version-plans/`](docs/version-plans/README.md).
+
 > **Prototype:** The bundled exercise catalogue and safety copy have not been professionally reviewed. Do not publish or present the generated routines as approved exercise prescriptions until the release gates in `TODOS.md` are complete.
 
 ## Stack
@@ -50,7 +52,7 @@ npm run generate:content
 npm run validate:content
 ```
 
-Content validation checks schemas, versions, unique and resolved IDs, progression tracks, harder-exercise cycles, sequence totals, and local illustration assets. A qualified fitness reviewer must approve and version the generated JSON before public launch.
+Content validation checks schemas, versions, unique and resolved IDs, progression tracks, harder-exercise cycles, sequence totals, direct YouTube demonstration URLs, and all local posture assets. Each exercise owns three WebP frames under `public/exercises/{exercise-id}/`. A qualified fitness reviewer must approve the prescriptions, posture imagery, videos, and generated JSON before public launch.
 
 ## Browser persistence
 
