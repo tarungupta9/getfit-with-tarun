@@ -7,11 +7,19 @@ import type {
 } from '../../domain/types'
 import { defaultPreferences } from '../../persistence/preferences'
 
+export type PlannerStep = 1 | 2 | 3 | 4
+
 export interface PlannerState {
-  phase: 'hydrating' | 'intake' | 'plan'
+  phase: 'hydrating' | 'landing' | 'plan'
   preferences: PlannerPreferences
   acknowledged: boolean
   plan: GeneratedPlan | null
+  modalOpen: boolean
+  step: PlannerStep
+  draftPreferences: PlannerPreferences
+  draftAcknowledged: boolean
+  selectedWeek: 1 | 2 | 3 | 4
+  selectedDay: Weekday
   error: string | null
   persistenceNotice: string | null
   persistenceAvailable: boolean
@@ -21,18 +29,23 @@ export type PlannerAction =
   | {
       type: 'hydrated'
       preferences: PlannerPreferences
+      plan: GeneratedPlan | null
       persistenceNotice: string | null
       persistenceAvailable: boolean
     }
+  | { type: 'open-modal' }
+  | { type: 'close-modal' }
+  | { type: 'set-step'; step: PlannerStep }
   | { type: 'set-minutes'; minutes: 15 | 30 | 45 }
   | { type: 'toggle-day'; day: Weekday }
   | { type: 'set-starting-point'; startingPoint: StartingPoint }
   | { type: 'set-acknowledged'; acknowledged: boolean }
   | { type: 'generated'; plan: GeneratedPlan }
   | { type: 'generation-failed'; message: string }
-  | { type: 'edit' }
+  | { type: 'select-week'; week: 1 | 2 | 3 | 4 }
+  | { type: 'select-day'; day: Weekday }
   | {
-      type: 'reset'
+      type: 'reset-draft'
       persistenceAvailable: boolean
       persistenceNotice: string | null
     }
@@ -44,6 +57,12 @@ export const initialPlannerState: PlannerState = {
   preferences: defaultPreferences,
   acknowledged: false,
   plan: null,
+  modalOpen: false,
+  step: 1,
+  draftPreferences: defaultPreferences,
+  draftAcknowledged: false,
+  selectedWeek: 1,
+  selectedDay: defaultPreferences.availableDays[0]!,
   error: null,
   persistenceNotice: null,
   persistenceAvailable: true,
@@ -57,54 +76,90 @@ export function plannerReducer(
     case 'hydrated':
       return {
         ...state,
-        phase: 'intake',
+        phase: action.plan ? 'plan' : 'landing',
         preferences: action.preferences,
+        draftPreferences: action.preferences,
+        plan: action.plan,
+        selectedDay: action.preferences.availableDays[0]!,
         persistenceNotice: action.persistenceNotice,
         persistenceAvailable: action.persistenceAvailable,
       }
+    case 'open-modal':
+      return {
+        ...state,
+        modalOpen: true,
+        step: 1,
+        draftPreferences: state.preferences,
+        draftAcknowledged: state.acknowledged,
+        error: null,
+      }
+    case 'close-modal':
+      return { ...state, modalOpen: false, error: null }
+    case 'set-step':
+      return { ...state, step: action.step, error: null }
     case 'set-minutes':
       return {
         ...state,
-        preferences: {
-          ...state.preferences,
+        draftPreferences: {
+          ...state.draftPreferences,
           minutesPerSession: action.minutes,
         },
         error: null,
       }
     case 'toggle-day': {
-      const selected = state.preferences.availableDays.includes(action.day)
-      if (!selected && state.preferences.availableDays.length >= 4) return state
-      const availableDays = (selected
-        ? state.preferences.availableDays.filter((day) => day !== action.day)
-        : [...state.preferences.availableDays, action.day]
+      const selected = state.draftPreferences.availableDays.includes(action.day)
+      if (!selected && state.draftPreferences.availableDays.length >= 4)
+        return state
+      const availableDays = (
+        selected
+          ? state.draftPreferences.availableDays.filter(
+              (day) => day !== action.day,
+            )
+          : [...state.draftPreferences.availableDays, action.day]
       ).sort((left, right) => weekdays.indexOf(left) - weekdays.indexOf(right))
       return {
         ...state,
-        preferences: { ...state.preferences, availableDays },
+        draftPreferences: { ...state.draftPreferences, availableDays },
         error: null,
       }
     }
     case 'set-starting-point':
       return {
         ...state,
-        preferences: {
-          ...state.preferences,
+        draftPreferences: {
+          ...state.draftPreferences,
           startingPoint: action.startingPoint,
         },
         error: null,
       }
     case 'set-acknowledged':
-      return { ...state, acknowledged: action.acknowledged, error: null }
+      return { ...state, draftAcknowledged: action.acknowledged, error: null }
     case 'generated':
-      return { ...state, phase: 'plan', plan: action.plan, error: null }
+      return {
+        ...state,
+        phase: 'plan',
+        preferences: state.draftPreferences,
+        acknowledged: state.draftAcknowledged,
+        plan: action.plan,
+        modalOpen: false,
+        selectedWeek: 1,
+        selectedDay: state.draftPreferences.availableDays[0]!,
+        error: null,
+      }
     case 'generation-failed':
       return { ...state, error: action.message }
-    case 'edit':
-      return { ...state, phase: 'intake', error: null }
-    case 'reset':
+    case 'select-week':
+      return { ...state, selectedWeek: action.week }
+    case 'select-day':
+      return { ...state, selectedDay: action.day }
+    case 'reset-draft':
       return {
-        ...initialPlannerState,
-        phase: 'intake',
+        ...state,
+        step: 1,
+        draftPreferences: defaultPreferences,
+        draftAcknowledged: false,
+        acknowledged: false,
+        error: null,
         persistenceAvailable: action.persistenceAvailable,
         persistenceNotice: action.persistenceNotice,
       }
