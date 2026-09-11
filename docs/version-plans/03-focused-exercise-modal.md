@@ -7,6 +7,10 @@
 
 Give each posture sequence enough space for focused study without forcing expanded media into the two-column workout layout.
 
+## Why this iteration followed V2
+
+V2 added richer exercise guidance, which exposed a presentation problem: detailed media and instructions competed with the compact workout layout. V3 changes the interaction surface rather than the planning model, isolating exercise study in a focused dialog while keeping workout scanning fast.
+
 ## Included scope
 
 - Exercise rows remain compact inside Workout A and Workout B.

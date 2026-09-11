@@ -7,6 +7,10 @@
 
 Turn a beginner's available time, weekdays, and starting point into a deterministic, explained four-week home-fitness plan without an account, API, or database.
 
+## Why this iteration came first
+
+V1 closes one complete user loop before adding adjacent product areas: provide a few commitment inputs, receive a usable plan, understand why it fits, and take it away through print or PDF. Accounts, tracking, nutrition, and open-ended generation stay out because none is required to test whether the core planning outcome is useful.
+
 ## Included scope
 
 - Intake for 15, 30, or 45-minute sessions; two to four weekdays; and three starting points.

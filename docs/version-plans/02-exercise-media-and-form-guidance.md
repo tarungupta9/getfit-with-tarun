@@ -7,6 +7,10 @@
 
 Make every catalog exercise easier to understand through local, human-looking posture sequences and a reviewed direct YouTube form link while keeping runtime content local.
 
+## Why this iteration followed V1
+
+V1 proved the planning loop, but generic movement-family illustrations could not explain the posture of each prescribed exercise. V2 targets that single comprehension gap while preserving the deterministic compiler, local-content model, privacy boundary, and narrow supported audience.
+
 ## Included scope
 
 - All 24 exercises receive three photoreal AI frames: start, key movement, and controlled finish.

@@ -2,9 +2,28 @@
 
 A browser-only prototype that turns a beginner's available time, weekdays, and starting point into an explained four-week home-fitness plan.
 
-Product progression is recorded in [`docs/version-plans/`](docs/version-plans/README.md).
+**Live prototype:** [getfit-with-tarun.netlify.app](https://getfit-with-tarun.netlify.app/)
 
-> **Prototype:** The bundled exercise catalogue and safety copy have not been professionally reviewed. Do not publish or present the generated routines as approved exercise prescriptions until the release gates in `TODOS.md` are complete.
+> **Prototype:** The bundled exercise catalogue and safety copy have not been professionally reviewed. Do not publish or present the generated routines as approved exercise prescriptions until the release gates in [`TODOS.md`](TODOS.md) are complete.
+
+## Product development approach
+
+This project is built as a sequence of small, explicit product iterations. Each version starts with one user problem, protects the existing product and safety boundaries, delivers a complete vertical slice, and records what remains intentionally deferred. Earlier plans stay unchanged so the reasoning and tradeoffs remain inspectable instead of being rewritten after the fact.
+
+| Iteration | Product question | Increment delivered |
+|---|---|---|
+| [V1](docs/version-plans/01-initial-mvp.md) | Can a beginner turn limited time and availability into one coherent plan? | An end-to-end, deterministic four-week planner with explanations, privacy boundaries, and print output. |
+| [V2](docs/version-plans/02-exercise-media-and-form-guidance.md) | Can every prescribed movement be easier to understand without introducing remote runtime content? | Exercise-specific posture sequences, curated form links, and stronger content validation. |
+| [V3](docs/version-plans/03-focused-exercise-modal.md) | Can detailed guidance remain focused without overwhelming the workout layout? | A keyboard-accessible exercise-detail modal with responsive and print-safe behavior. |
+
+The iteration pattern is deliberate:
+
+1. Prove the narrowest useful user outcome before expanding scope.
+2. Keep business rules deterministic and safety-sensitive content reviewable.
+3. Improve one source of user friction at a time without destabilizing the core.
+4. Validate the increment, document its acceptance checks, and carry deferred work forward explicitly.
+
+Read the [version-plan index](docs/version-plans/README.md) for the progression, the [V1 design record](docs/designs/home-fitness-mvp.md) for the original product reasoning, and [`TODOS.md`](TODOS.md) for known release blockers.
 
 ## Stack
 
@@ -66,4 +85,4 @@ The generated plan, disclaimer acknowledgment, and health information are never 
 
 ## Deployment
 
-`netlify.toml` pins Node.js 24, runs the production build, and publishes `dist/client`. Connect the repository to Netlify to receive deploy previews for pull requests and production deploys from `main`. The official Vite plugin also emits the server entry Netlify needs for TanStack Start; personalized planning still happens entirely in the browser.
+`netlify.toml` pins Node.js 24, runs the production build, and publishes `dist/client`. Netlify creates deploy previews for pull requests and publishes production from `main` at [getfit-with-tarun.netlify.app](https://getfit-with-tarun.netlify.app/). The official Vite plugin also emits the server entry Netlify needs for TanStack Start; personalized planning still happens entirely in the browser.
