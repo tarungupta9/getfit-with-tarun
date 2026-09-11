@@ -1,4 +1,5 @@
 import { z } from 'zod'
+import { getYouTubeVideoId } from './youtube'
 
 export const weekdays = [
   'mon',
@@ -96,8 +97,8 @@ export const PrescriptionTrackSchema = z.tuple([
 const SourceRecordSchema = z.object({
   demonstrationUrl: z
     .url({ protocol: /^https$/ })
-    .refine((url) => ['www.youtube.com', 'youtube.com', 'youtu.be'].includes(new URL(url).hostname), {
-      message: 'Demonstration URL must be a direct YouTube link.',
+    .refine((url) => getYouTubeVideoId(url) !== null, {
+      message: 'Demonstration URL must identify a direct YouTube video.',
     }),
   demonstrationTitle: z.string().min(1),
   publisher: z.string().min(1),
